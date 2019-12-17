@@ -3,25 +3,25 @@
 
 class UserController {
     function __construct(){
-        session_start();
+        $this->link = mysqli_connect("localhost","root","","php_project");
+        mysqli_set_charset($this->link,"utf8");
     }
 
     //登录页面
     public function login() {
         $errinfo = '';
         require 'View/login.html';
+        
     }
     //登录操作
     public function loginPost() {
-        $link = mysqli_connect("localhost","root","","php_project");
-        mysqli_set_charset($link,"utf8");
-
         if(!empty($_POST)){
             $username = $_POST['username'];
             $password = $_POST['password'];
+            $code = $_POST['code'];
 
             $sql = "SELECT * FROM user WHERE username='$username'";
-            $res = mysqli_query($link,$sql);
+            $res = mysqli_query($this->link,$sql);
             $r = mysqli_fetch_assoc($res);
             if(empty($r)){
                 $errinfo = "用户不存在！";
@@ -33,11 +33,18 @@ class UserController {
                 require 'View/login.html';
                 die();
             }
+            if($_SESSION['code']!=$code){
+                $errinfo = "验证码错误！";
+                require 'View/login.html';
+                die();
+            }
 //    setcookie('username',$username,time()+600);
             $_SESSION['username'] = $r['username'];
 
+//            echo $_SESSION['username'];
             require 'View/index.html';
 //    exit();
+
         }
     }
 
@@ -49,9 +56,6 @@ class UserController {
 
     // 注册操作
     public function regisPost() {
-        $link = mysqli_connect("localhost","root","","php_project");
-        mysqli_set_charset($link,"utf8");
-
         if(!empty($_POST)){
 
             $username = $_POST['username'];
@@ -78,12 +82,12 @@ class UserController {
             }
 
             $sql = "SELECT * FROM user WHERE username='$username'";
-            $res = mysqli_query($link,$sql);
+            $res = mysqli_query($this->link,$sql);
             $r = mysqli_fetch_assoc($res);
             // 该用户名没有被注册
             if(empty($r)){
                 $regsql = "INSERT INTO user VALUES(NULL,'$username','$password','$nickname')";
-                $result = mysqli_query($link,$regsql);
+                $result = mysqli_query($this->link,$regsql);
                 if($result){
                     $errinfo = "注册成功！";
                     require 'View/login.html';
