@@ -1,0 +1,16 @@
+{
+  "id": "1559931",
+  "name": "nodejs_project",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11121523",
+      "name": "下拉列表框",
+      "font_class": "xialaliebiaokuang",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    }
+  ]
+}
