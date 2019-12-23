@@ -1,6 +1,7 @@
 <?php
 session_start();
-$font = "D:/xampp/htdocs/phpProject/public/font/segoepr.ttf";  // 路径问题
+//$font = "D:/xampp/htdocs/phpProject/public/font/segoepr.ttf";  // 路径问题
+$font = "C:/xampp/htdocs/phpProject/public/font/segoepr.ttf";
 $s ="0123456789abcdefjhijklmnopqrstuvwxyz";
 $a = '';
 $code = '';
@@ -20,7 +21,7 @@ for($i=0; $i<4; $i++){
     $b = rand(0,120);
     $code .=$a;
     $color = imagecolorallocate($im,$r,$g,$b);
-//    imagestring($im,5,$x,40,$a,$color);
+//    imagestring($im,5,$x,20,$a,$color);
     imagettftext($im,20,$range,$x,35,$color,$font,$a);
 }
 $_SESSION["code"]=$code;
@@ -34,6 +35,8 @@ for ($i = 0; $i < 3; $i++) {
     $linecolor = imagecolorallocate($im, mt_rand(50, 200), mt_rand(50, 200), mt_rand(50, 200));
     imageline($im, mt_rand(0, 100), mt_rand(0, 50), mt_rand(0, 100), mt_rand(0, 50), $pointcolor);
 }
+
+echo $_SESSION["code"];
 ob_clean();//原来的程序没有这一栏
 header('Content-Type:image/png');
 imagepng($im);

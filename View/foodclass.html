@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <!-- 引入bootstrap样式文件 -->
+    <link rel="stylesheet" href="public/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/font/iconfont.css">
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .nav-item a{
+            color: #000;
+        }
+        .nav-item .active{
+            font-size:20px;
+            color: #fff;
+            font-weight: 600;
+        }
+        #bg{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .container{
+            background: #fff;
+            min-height:100% ;
+            height: auto;
+            padding-bottom: 30px;
+        }
+        .user_text{
+            display: inline-block;
+        }
+        .user_text li{
+            min-width: 40px;
+            float: left;
+        }
+        .navbar{
+            background: #DFE9E8;
+        }
+        .title{
+            margin: 20px 0;
+            border-bottom: 2px solid #52B2A7;
+        }
+        .title_s{
+            background: #DFE9E8;
+            font-size: 22px;
+            height: 50px;
+            line-height: 50px;
+        }
+        .title_ss{
+            font-size: 18px;
+            border-bottom: 2px solid #DFE9E8;
+        }
+        .conetnt_s{
+            margin-top: 20px;
+        }
+        .item_c{
+            margin-bottom: 20px;
+        }
+        .item{
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: 1px solid #52B2A7;
+            color:#52B2A7;
+        }
+        .item:hover{
+            background:#52B2A7;
+            color:#fff;
+        }
+
+    </style>
+</head>
+<body>
+<img id="bg" src="public/img/bg2.jpg" alt="">
+<div class="container">
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#">
+            <img src="public/img/logo.png" alt="Logo" style="width:40px;">
+        </a>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " href="/phpProject/?a=index">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/phpProject/?a=foodclass">菜谱</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/phpProject/?a=user">个人中心</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/phpProject/?a=news">动态</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/phpProject/?a=friends">好友列表</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/phpProject/?a=morefriends">更多好友</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-right user_text">
+            <?php
+            if(!empty( $_SESSION['username'])){
+                $username = $_SESSION['username'];
+                 echo "<li>欢迎！</li> ";
+            echo "<li>$username</li> ";
+            echo "<li><a href='/phpProject/?a=logout'> 退出</a></li>";
+            }else{
+            echo "<li><a href='/phpProject/?a=regis'> 注册</a></li>";
+            echo "<li><a href='/phpProject'> 登录</a></li>";
+            }
+            ?>
+        </ul>
+        <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="iconfont icon-xialaliebiaokuang" style="font-size:26px;"></span>
+        </button>
+    </nav>
+
+    <div class="foods row">
+        <h2 class="col-md-12 title">分类</h2>
+        <?php
+           foreach ($foods as $food) {
+                echo "<div class='col-md-12 food'>";
+                echo "<p class='title_s'>".$food["name"]."</p>";
+                echo "<div class='food row'>";
+                foreach ($food["cs"] as $f) {
+                echo " <div class='col-md-12 conetnt_s'>";
+                    echo "<p class='title_ss'>".$f["name"]."</p>";
+                    echo "<div class='row ff'>";
+                        foreach ($f["cs"] as $ff) {
+                        echo "<div class='col-6 col-md-3 col-sm-4 item_c'>";
+                            echo "<a class='item' href='/phpProject/?a=foods&name=";
+                            echo $ff["name"]."' >".$ff["name"]."</a>";
+                            echo "</div>";
+                        }
+                    echo "</div>";
+                echo "</div>";
+                }
+            echo "</div>";
+            echo "</div>";
+            }
+            ?>
+    </div>
+</div>
+
+
+
+<!--引入jQuery-->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="public/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

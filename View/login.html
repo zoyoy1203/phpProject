@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -43,6 +44,12 @@
         }
 
     </style>
+    <script language="javascript">
+        function newgdcode(obj,url) {
+            obj.src = url+ '?nowtime=' + new Date().getTime();
+            //后面传递一个随机参数，否则在IE7和火狐下，不刷新图片
+        }
+    </script>
 </head>
 <body>
 <div class="container">
@@ -85,7 +92,7 @@
                            placeholder="请输入验证码"
                            autocomplete
                             >
-                    <img src="util/verCode.php" class="col-md-5 col-sm-5 col-12" alt=""/>
+                    <img src="util/verCode.php" alt="看不清楚，换一张" onclick="javascript:newgdcode(this,this.src);"  class="col-md-5 col-sm-5 col-12" alt=""/>
                 </div>
             </div>
             <div class="control-group">
