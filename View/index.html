@@ -127,7 +127,19 @@
 
 </div>
 <div class="container row foods">
+    <h2 class="col-md-12">今日推荐</h2>
+    <?php
+       foreach ($foods as $food) {
+        if($food["type"]==2){
+                echo "<a class='col-md-3 food'  href='/phpProject/?a=foodDetail&id=";
+                echo $food["r"]["id"]."' ><div>";
+                    echo "<img src=".$food['r']['img']." />";
+                    echo "<p>".$food['r']['n']."</p>";
+                    echo "</div></a>";
+            }
 
+        }
+    ?>
 </div>
 
 <!--引入jQuery-->

@@ -1,10 +1,318 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
+<!doctype html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动态</title>
+    <!-- 引入bootstrap样式文件 -->
+    <link rel="stylesheet" href="public/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/font/iconfont.css">
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .nav-item a{
+            color: #000;
+        }
+        .nav-item .active{
+            font-size:20px;
+            color: #fff;
+            font-weight: 600;
+        }
+        #bg{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .container{
+            background: #fff;
+            min-height:100% ;
+            height: auto;
+            padding-bottom: 30px;
+        }
+        .user_text{
+            display: inline-block;
+        }
+        .user_text li{
+            min-width: 40px;
+            float: left;
+        }
+        .navbar{
+            background: #F19482;
+        }
+        .avatar{
+            width: 50px;
+            height: 50px;
+            background: #ccc;
+        }
+        .name{
+            font-size: 20px;
+            font-weight: 600;
+            color: #F19482;
+        }
+        .user_info{
+            margin-top:20px;
+            border-right: 2px solid #F19482;
+        }
+        .put_new{
+            margin:20px auto 20px auto;
+        }
+
+        .news{
+            margin-top: 30px;
+        }
+        .new{
+            /* border: 2px solid  #F19482; */
+        }
+        .new div{
+            padding: 0;
+        }
+        .new_img{
+            width: 100px;
+            height: 100px;
+            padding: 0;
+        }
+        
+        #localImag{
+            margin-top: 20px;
+            display: inline-block;
+        }
+        #localImag img{
+            float: left;
+            margin-right: 20px;
+        }
+
+    </style>
 </head>
 <body>
+<img id="bg" src="public/img/bg.png" alt="">
+<div class="container">
 
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#">
+            <img src="public/img/logo.png" alt="Logo" style="width:40px;">
+        </a>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " href="/phpProject/?a=index">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/phpProject/?a=foodclass">菜谱</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/phpProject/?a=user">个人中心</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/phpProject/?a=news">动态</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/phpProject/?a=friends">好友列表</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/phpProject/?a=morefriends">更多好友</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-right user_text">
+            <?php
+            if(!empty( $_SESSION['username'])){
+                $username = $_SESSION['username'];
+                 echo "<li>欢迎！</li> ";
+            echo "<li>$username</li> ";
+            echo "<li><a href='/phpProject/?a=logout'> 退出</a></li>";
+            }else{
+            echo "<li><a href='/phpProject/?a=regis'> 注册</a></li>";
+            echo "<li><a href='/phpProject'> 登录</a></li>";
+            }
+            ?>
+        </ul>
+        <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="iconfont icon-xialaliebiaokuang" style="font-size:26px;"></span>
+        </button>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-12 put_new" >
+                <h3>发布动态  </h3>
+                <div id="myinfo">
+                    <form action="/phpProject/?a=uploadNew"  class="row" method="post" enctype="multipart/form-data">
+                        <div class="col-md-1 col-1"></div>
+                        <input type="text" placeholder="美食推荐。。。" class="col-10 col-md-6" name="text" style="border-left: 1px solid #F19482;">
+
+                        <div class="col-md-1 col-1"></div>
+                        <input type='button' value="上传图片" class="col-5 col-md-2" OnClick='javascript:$("#doc").click();'/>
+                        <input type="file" name="img[]" multiple   id="doc" onchange="showImage();" style="display: none;" />
+                        <input type="submit"class="col-5 col-md-1" value="发送"/>
+                        <div class="col-md-1 col-1"></div>
+                    </form>
+                    <div id="localImag" >
+                        <img id="preview1" width=-1 height=-1 style="display:none" />
+                        <img id="preview2" width=-1 height=-1 style="display:none" />
+                        <img id="preview3" width=-1 height=-1 style="display:none" />
+                    </div>
+                </div>
+                <p class="text-center error">
+                    <?= $errinfo ?>
+                </p>
+            </div>
+            <?php
+            if($news==null){
+                echo "<div class='col-md-12 text-center' style='font-size:24px;font-weight:600;color:#F19482;'>暂无动态！</div>";
+                }else{
+                    for(var i= 0;i<$news.length;i++){
+
+                        <div class="row news">
+                            <div class="col-md-2 col-2 text-right">
+                                <img src='$news[i].img[0]' alt="" class="avatar">
+                                <img src='$news[i].img[1]' alt="" class="avatar">
+                                <img src='$news[i].img[2]' alt="" class="avatar">
+                            </div>
+                            <div class=" col-md-10 col-10">
+                                <div class="new">
+                                    <div class="col-md-12 name">
+                                        <%= news[i].nickname%>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <%= news[i].text%>
+                                    </div>
+                                    <img class="new_img col-md-12" src=" <%= news[i].img%>" alt="">
+                                    <div class="col-md-12">
+                                        <%= news[i].createtime%>
+                                        <button class="addlike">
+                                            <div class="id" style="display: none;"> <%= news[i].id %></div>
+                                            <div class="like" style="display: none;"> <%= news[i].like %></div>
+                                            <% if(news[i].like){%>
+                                            取消点赞
+                                            <%}else{%>
+                                            点赞
+                                            <%}%>
+
+                                        </button>
+                                        <div>
+                                            <% news[i].like_users.forEach(function (user) { %>
+                                            <img style="width:30px;height:30px;" src="<%= user.avatar%>" alt="">
+                                            <%}) %>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-12 comments">
+                                        <form action="/user/addcomments"  class="row" method="post">
+                                            <input type="text" value="<%= news[i].id%>" style="visibility: hidden;width: 0;" name="newid">
+                                            <input   type="text" placeholder="请输入评论。。"  name="content">
+                                            <input  type="submit" value="发送"/>
+                                        </form>
+                                    </div>
+                                    <% news[i].comments.forEach(function (comment) { %>
+                                    <div class="col-md-12">
+                                        <span style="display:inline-block;font-size:18px;font-weight:600;min-width: 50px;"><%= comment.nickname%>:</span>
+                                        <span><%= comment.content%></span>
+
+                                    </div>
+                                    <%}) %>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    }
+
+                }
+
+            ?>
+
+        </div>
+    </div>
+
+</div>
+
+<!--引入jQuery-->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="public/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script>
+    function showImage() {
+        var docObj = document.getElementById("doc");
+        var imgObjPreview1 = document.getElementById("preview1");
+        var imgObjPreview2 = document.getElementById("preview2");
+        var imgObjPreview3 = document.getElementById("preview3");
+        if (docObj.files && docObj.files[0]) {
+            //火狐下，直接设img属性
+            imgObjPreview1.style.display = 'block';
+            imgObjPreview1.style.width = '100px';
+            imgObjPreview1.style.height = '100px';
+            //imgObjPreview.src = docObj.files[0].getAsDataURL();
+            //火狐7以上版本不能用上面的getAsDataURL()方式获取，需要一下方式
+            imgObjPreview1.src = window.URL.createObjectURL(docObj.files[0]);
+
+            imgObjPreview2.style.display = 'block';
+            imgObjPreview2.style.width = '100px';
+            imgObjPreview2.style.height = '100px';
+            //imgObjPreview.src = docObj.files[0].getAsDataURL();
+            //火狐7以上版本不能用上面的getAsDataURL()方式获取，需要一下方式
+            imgObjPreview2.src = window.URL.createObjectURL(docObj.files[1]);
+
+            imgObjPreview3.style.display = 'block';
+            imgObjPreview3.style.width = '100px';
+            imgObjPreview3.style.height = '100px';
+            //imgObjPreview.src = docObj.files[0].getAsDataURL();
+            //火狐7以上版本不能用上面的getAsDataURL()方式获取，需要一下方式
+            imgObjPreview3.src = window.URL.createObjectURL(docObj.files[2]);
+        } else {
+            //IE下，使用滤镜
+            docObj.select();
+            var imgSrc = document.selection.createRange().text;
+            var localImagId = document.getElementById("localImag");
+            //必须设置初始大小
+            localImagId.style.width = "250px";
+            localImagId.style.height = "200px";
+            //图片异常的捕捉，防止用户修改后缀来伪造图片
+            try {
+                localImagId.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+                localImagId.filters
+                        .item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+            } catch (e) {
+                alert("您上传的图片格式不正确，请重新选择!");
+                return false;
+            }
+            imgObjPreview.style.display = 'none';
+            document.selection.empty();
+        }
+        return true;
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        // 删除数据
+        $('.addlike').on('click',function () {
+            var id = $.trim($(this).children('.id').text());
+            var like = $.trim($(this).children('.like').text());
+            // 将数据传递到服务器中
+            $.ajax({
+                type:"POST",
+                url:'/user/addlike',
+                data:{
+                    id:id,
+                    like:like
+                },
+                success:function (data) {
+                    location.reload();
+                }
+            })
+        });
+
+    });
+</script>
 </body>
+
 </html>
+【=

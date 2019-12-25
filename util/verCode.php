@@ -1,7 +1,7 @@
 <?php
 session_start();
-//$font = "D:/xampp/htdocs/phpProject/public/font/segoepr.ttf";  // 路径问题
-$font = "C:/xampp/htdocs/phpProject/public/font/segoepr.ttf";
+$font = "D:/xampp/htdocs/phpProject/public/font/segoepr.ttf";  // 路径问题
+//$font = "C:/xampp/htdocs/phpProject/public/font/segoepr.ttf";
 $s ="0123456789abcdefjhijklmnopqrstuvwxyz";
 $a = '';
 $code = '';

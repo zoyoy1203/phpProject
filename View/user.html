@@ -1,10 +1,239 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
+<!doctype html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <!-- 引入bootstrap样式文件 -->
+    <link rel="stylesheet" href="public/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/font/iconfont.css">
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .nav-item a{
+            color: #000;
+        }
+        .nav-item .active{
+            font-size:20px;
+            color: #fff;
+            font-weight: 600;
+        }
+        #bg{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .container{
+            background:  rgb(245, 219, 212);
+            min-height:100% ;
+            height: auto;
+            padding-bottom: 30px;
+        }
+        .user_text{
+            display: inline-block;
+        }
+        .user_text li{
+            min-width: 40px;
+            float: left;
+        }
+        .navbar{
+            background: #F19482;
+        }
+
+        .content{
+            margin: 30px 20px 20px 30px;
+            background:#fff;
+            border-radius: 10px;
+        }
+        .infos{
+            border-right:2px solid #F19482;
+        }
+
+        #localImag{
+            position: absolute;
+            top: 40px;
+            left: 140px;
+        }
+        .info_ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .info_ul li{
+            list-style: none;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        #infos li{
+            display: inline-block;
+            margin-top: 40px;
+            width: 100%;
+
+        }
+        .news{
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        textarea{
+            border: #F19482;
+            background: #F5DBD4;
+        }
+        input,
+        button{
+            background: #F19482;
+            border: none;
+        }
+    </style>
 </head>
 <body>
+<img id="bg" src="public/img/bg.png" alt="">
+<div class="container">
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#">
+            <img src="public/img/logo.png" alt="Logo" style="width:40px;">
+        </a>
 
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " href="/phpProject/?a=index">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/phpProject/?a=foodclass">菜谱</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/phpProject/?a=user">个人中心</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/phpProject/?a=news">动态</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/phpProject/?a=friends">好友列表</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/phpProject/?a=morefriends">更多好友</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-right user_text">
+            <?php
+            if(!empty( $_SESSION['username'])){
+                $username = $_SESSION['username'];
+                 echo "<li>欢迎！</li> ";
+            echo "<li>$username</li> ";
+            echo "<li><a href='/phpProject/?a=logout'> 退出</a></li>";
+            }else{
+            echo "<li><a href='/phpProject/?a=regis'> 注册</a></li>";
+            echo "<li><a href='/phpProject'> 登录</a></li>";
+            }
+            ?>
+        </ul>
+        <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="iconfont icon-xialaliebiaokuang" style="font-size:26px;"></span>
+        </button>
+    </nav>
+
+    <div class=" content row">
+        <div class="infos col-md-4 col-sm-12 col-12">
+            <h3>用户头像</h3>
+            <img style="width: 100px;height: 100px;" src="<?=$user['avatar'] ?>" alt="">
+            <form action="/phpProject/?a=updateAvatar" method="post" enctype="multipart/form-data">
+                <input type='button' value="上传图片"  OnClick='javascript:$("#doc").click();'/>
+                <input type="hidden" name="MAX_FILE_SIZE" value="6291456"/>
+                <input type="file" name="avatar"  id="doc" onchange="showImage();" style="display: none;" />
+
+                <input type="submit" value="发送"/>
+            </form>
+            <div id="localImag">
+                <img id="preview" width=-1 height=-1 style="display:none" />
+            </div>
+
+            <ul class="info_ul">
+                <li>您的ID:  <span><?=$user['id']?></span></li>
+                <li>用户名:  <span><?=$user['username'] ?></span></li>
+                <li>昵称:  <span><?=$user['nickname'] ?></span></li>
+            </ul>
+            <!--座右铭：-->
+            <!--<div>-->
+            <!--<textarea name="motto" id="" cols="30" rows="5" form="mottoForm"><%= user.motto%></textarea>-->
+            <!--<form action="/user/updateMotto" method="post" id="mottoForm">-->
+            <!--&lt;!&ndash; <input type="text" value="<%= user.motto%>" name="motto"> &ndash;&gt;-->
+            <!--<button type="submit">修改座右铭</button>-->
+            <!--</form>-->
+            <!--</div>-->
+            <p class="text-center error">
+                <?= $errinfo ?>
+            </p>
+        </div>
+        <div class="news  col-md-8 col-sm-12 col-12">
+            <h2 class="col-md-12">我的动态</h2>
+            <!--<% for(var i= 0;i<news.length;i++){%>-->
+            <!--<div class="new">-->
+            <!--<div class="col-md-12">-->
+            <!--<%= news[i].text%>-->
+            <!--</div>-->
+            <!--<img class="new_img col-md-12" src=" <%= news[i].img%>" alt="">-->
+            <!--<p class="col-md-12">-->
+            <!--<span>发布时间：</span>-->
+            <!--<%= news[i].createtime%>-->
+            <!--</p>-->
+            <!--</div>-->
+            <!--<% }%>-->
+        </div>
+
+    </div>
+
+
+</div>
+
+<!--引入jQuery-->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script>
+    function showImage() {
+        var docObj = document.getElementById("doc");
+        var imgObjPreview = document.getElementById("preview");
+        if (docObj.files && docObj.files[0]) {
+            //火狐下，直接设img属性
+            imgObjPreview.style.display = 'block';
+            imgObjPreview.style.width = '100px';
+            imgObjPreview.style.height = '100px';
+            //imgObjPreview.src = docObj.files[0].getAsDataURL();
+            //火狐7以上版本不能用上面的getAsDataURL()方式获取，需要一下方式
+            imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+        } else {
+            //IE下，使用滤镜
+            docObj.select();
+            var imgSrc = document.selection.createRange().text;
+            var localImagId = document.getElementById("localImag");
+            //必须设置初始大小
+            localImagId.style.width = "250px";
+            localImagId.style.height = "200px";
+            //图片异常的捕捉，防止用户修改后缀来伪造图片
+            try {
+                localImagId.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+                localImagId.filters
+                        .item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+            } catch (e) {
+                alert("您上传的图片格式不正确，请重新选择!");
+                return false;
+            }
+            imgObjPreview.style.display = 'none';
+            document.selection.empty();
+        }
+        return true;
+    }
+</script>
 </body>
+
 </html>
