@@ -166,71 +166,72 @@
                     <?= $errinfo ?>
                 </p>
             </div>
+
             <?php
             if($news==null){
                 echo "<div class='col-md-12 text-center' style='font-size:24px;font-weight:600;color:#F19482;'>暂无动态！</div>";
                 }else{
-                    for(var i= 0;i<$news.length;i++){
+                for( $i= 0;$i< count($news);$i++){
+                echo "<div class='row news'>";
+                    echo "<div class='col-md-2 col-2 text-right'>";
+                        echo "<img src='$news[$i].img[0]' class='avatar'>";
+                        echo "<img src='$news[$i].img[1]' class='avatar'>";
+                        echo "<img src='$news[$i].img[2]' class='avatar'>";
+                    echo "</div>";
+                echo "<div class='col-md-10 col-10'>";
+                        echo"<div class='new'>";
+                            echo"<div class='col-md-12 name'>";
+                                 echo $news[$i].nickname;
+                            echo"</div>";
+                            echo"<div class='col-md-12'>";
+                                 echo $news[$i].content;
+                            echo"</div>";
+                            echo"<img class='new_img col-md-12' src=' $news[$i].img'>";
+                            echo"<div class='col-md-12'>";
+                                echo $news[$i].createtime;
+                                echo"<button class='addlike'>";
+                                    echo"<div class='id' style='display: none;'>". $news[$i].id ."</div>";
+                                    echo"<div class='like' style='display: none;'> ".news[$i].like ."</div>";
+                                    if($news[$i].like){
+                                    echo '取消点赞';
+                                    }else{
+                                    echo '点赞';
+                                    }
 
-                        <div class="row news">
-                            <div class="col-md-2 col-2 text-right">
-                                <img src='$news[i].img[0]' alt="" class="avatar">
-                                <img src='$news[i].img[1]' alt="" class="avatar">
-                                <img src='$news[i].img[2]' alt="" class="avatar">
-                            </div>
-                            <div class=" col-md-10 col-10">
-                                <div class="new">
-                                    <div class="col-md-12 name">
-                                        <%= news[i].nickname%>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <%= news[i].text%>
-                                    </div>
-                                    <img class="new_img col-md-12" src=" <%= news[i].img%>" alt="">
-                                    <div class="col-md-12">
-                                        <%= news[i].createtime%>
-                                        <button class="addlike">
-                                            <div class="id" style="display: none;"> <%= news[i].id %></div>
-                                            <div class="like" style="display: none;"> <%= news[i].like %></div>
-                                            <% if(news[i].like){%>
-                                            取消点赞
-                                            <%}else{%>
-                                            点赞
-                                            <%}%>
+                                echo"</button>";
+                                echo"<div>";
+                                    forEach( $news[$i]['like_users'] as $user) {
+                                    echo"<img style='width:30px;height:30px;' src='$user.avatar' >";
+                                    }
+                                echo"</div>";
 
-                                        </button>
-                                        <div>
-                                            <% news[i].like_users.forEach(function (user) { %>
-                                            <img style="width:30px;height:30px;" src="<%= user.avatar%>" alt="">
-                                            <%}) %>
-                                        </div>
+                            echo"</div>";
+                            echo"<div class='col-md-12 comments'>";
+                                echo"<form action='/user/addcomments'  class='row' method='post'>";
+                                    echo"<input type='text' value='$news[$i].id' style='visibility: hidden;width: 0;' name='newid'>";
+                                    echo"<input   type='text' placeholder='请输入评论。。'  name='content'>";
+                                    echo"<input  type='submit' value='发送'/>";
+                                echo"</form>";
+                            echo"</div>";
+                            forEach( $news[$i].comments as $comment) {
+                            echo"<div class='col-md-12'>";
+                                echo"<span style='display:inline-block;font-size:18px;font-weight:600;min-width: 50px;'>."comment.nickname."</span>";
+                                echo"<span>".$comment.content."</span>";
 
-                                    </div>
-                                    <div class="col-md-12 comments">
-                                        <form action="/user/addcomments"  class="row" method="post">
-                                            <input type="text" value="<%= news[i].id%>" style="visibility: hidden;width: 0;" name="newid">
-                                            <input   type="text" placeholder="请输入评论。。"  name="content">
-                                            <input  type="submit" value="发送"/>
-                                        </form>
-                                    </div>
-                                    <% news[i].comments.forEach(function (comment) { %>
-                                    <div class="col-md-12">
-                                        <span style="display:inline-block;font-size:18px;font-weight:600;min-width: 50px;"><%= comment.nickname%>:</span>
-                                        <span><%= comment.content%></span>
+                            echo"</div>";
+                            })
+                        echo"</div>";
 
-                                    </div>
-                                    <%}) %>
-                                </div>
+                    echo"</div>";
+                echo "</div>";
 
-                            </div>
-                        </div>
 
-                    }
+
+                }
 
                 }
 
             ?>
-
         </div>
     </div>
 

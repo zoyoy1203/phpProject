@@ -148,11 +148,11 @@
             <h3>用户头像</h3>
             <img style="width: 100px;height: 100px;" src="<?=$user['avatar'] ?>" alt="">
             <form action="/phpProject/?a=updateAvatar" method="post" enctype="multipart/form-data">
-                <input type='button' value="上传图片"  OnClick='javascript:$("#doc").click();'/>
+                <input type='button' value="上传头像"  OnClick='javascript:$("#doc").click();'/>
                 <input type="hidden" name="MAX_FILE_SIZE" value="6291456"/>
                 <input type="file" name="avatar"  id="doc" onchange="showImage();" style="display: none;" />
 
-                <input type="submit" value="发送"/>
+                <input type="submit" value="确认修改"/>
             </form>
             <div id="localImag">
                 <img id="preview" width=-1 height=-1 style="display:none" />

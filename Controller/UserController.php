@@ -277,10 +277,28 @@ class UserController {
     // 动态
     public function news() {
         $errinfo = '';
-        $sql = "SELECT * FROM news ";
+        $news = [];
+        // 查询所有动态
+        $sql = "SELECT news.*,`user`.avatar,`user`.nickname FROM `user`,news WHERE `user`.id=news.user_id ORDER BY news.createtime DESC,news.id DESC";
         $res = mysqli_query($this->link,$sql);
-        $news = mysqli_fetch_assoc($res);
 
+        while($result = mysqli_fetch_assoc($res)){
+            $result['img'] = explode( ',',$result['img']);
+
+            // 查询所有动态的点赞信息
+            $sql1 = "SELECT like_news.id,`user`.id 'uid',`user`.avatar,`user`.nickname FROM `user`,like_news WHERE `user`.id=like_news.user_id AND like_news.news_id=".$result['id'];
+            $res1 = mysqli_query($this->link,$sql1);
+            $result['like_users'] = [];
+            while($result1 = mysqli_fetch_assoc($res1)){
+                array_push( $result['like_users'],$result1);
+            }
+            array_push($news,$result);
+        }
+
+
+
+
+//        var_dump($news);
         require 'View/news.html';
     }
     public function news1($info) {
@@ -393,7 +411,7 @@ class UserController {
             }
 
 
-            $img = implode('**', $imgs);
+            $img = implode(',', $imgs);
 
 
             if(!empty( $_SESSION['username'])){
