@@ -289,9 +289,23 @@ class UserController {
             $sql1 = "SELECT like_news.id,`user`.id 'uid',`user`.avatar,`user`.nickname FROM `user`,like_news WHERE `user`.id=like_news.user_id AND like_news.news_id=".$result['id'];
             $res1 = mysqli_query($this->link,$sql1);
             $result['like_users'] = [];
+            $result['like'] = false;
             while($result1 = mysqli_fetch_assoc($res1)){
+                if( $result1['uid'] === $_SESSION['userid']){
+                    $result['like'] = true;
+                }
                 array_push( $result['like_users'],$result1);
             }
+
+            // 查询所有动态的相应评论
+            $sql2 = "SELECT `comment`.*,`user`.nickname FROM `comment`,`user` WHERE new_id=".$result['id']." AND `comment`.user_id=`user`.id";
+            $res2 = mysqli_query($this->link,$sql2);
+            $result['comments'] = [];
+            while($result2 = mysqli_fetch_assoc($res2)){
+                array_push( $result['comments'],$result2);
+            }
+
+
             array_push($news,$result);
         }
 

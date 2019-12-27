@@ -174,25 +174,25 @@
                 for( $i= 0;$i< count($news);$i++){
                 echo "<div class='row news'>";
                     echo "<div class='col-md-2 col-2 text-right'>";
-                        echo "<img src='$news[$i].img[0]' class='avatar'>";
-                        echo "<img src='$news[$i].img[1]' class='avatar'>";
-                        echo "<img src='$news[$i].img[2]' class='avatar'>";
+                        echo "<img src='".$news[$i]["avatar"]."' class='avatar'>";
                     echo "</div>";
                 echo "<div class='col-md-10 col-10'>";
                         echo"<div class='new'>";
                             echo"<div class='col-md-12 name'>";
-                                 echo $news[$i].nickname;
+                                 echo $news[$i]['nickname'];
                             echo"</div>";
                             echo"<div class='col-md-12'>";
-                                 echo $news[$i].content;
+                                 echo $news[$i]['content'];
                             echo"</div>";
-                            echo"<img class='new_img col-md-12' src=' $news[$i].img'>";
+                            echo"<img class='new_img col-md-12' src='".$news[$i]["img"][0]."'>";
+                            echo"<img class='new_img col-md-12' src='".$news[$i]["img"][1]."'>";
+                            echo"<img class='new_img col-md-12' src='".$news[$i]["img"][2]."'>";
                             echo"<div class='col-md-12'>";
-                                echo $news[$i].createtime;
+                                echo $news[$i]['createtime'];
                                 echo"<button class='addlike'>";
-                                    echo"<div class='id' style='display: none;'>". $news[$i].id ."</div>";
-                                    echo"<div class='like' style='display: none;'> ".news[$i].like ."</div>";
-                                    if($news[$i].like){
+                                    echo"<div class='id' style='display: none;'>". $news[$i]['id']."</div>";
+                                    echo"<div class='like' style='display: none;'> ".$news[$i]['like'] ."</div>";
+                                    if($news[$i]['like']){
                                     echo '取消点赞';
                                     }else{
                                     echo '点赞';
@@ -201,25 +201,25 @@
                                 echo"</button>";
                                 echo"<div>";
                                     forEach( $news[$i]['like_users'] as $user) {
-                                    echo"<img style='width:30px;height:30px;' src='$user.avatar' >";
+                                    echo"<img style='width:30px;height:30px;' src='".$user["avatar"]."' >";
                                     }
                                 echo"</div>";
 
                             echo"</div>";
                             echo"<div class='col-md-12 comments'>";
                                 echo"<form action='/user/addcomments'  class='row' method='post'>";
-                                    echo"<input type='text' value='$news[$i].id' style='visibility: hidden;width: 0;' name='newid'>";
+                                    echo"<input type='text' value='".$news[$i]["id"]."' style='visibility: hidden;width: 0;' name='newid'>";
                                     echo"<input   type='text' placeholder='请输入评论。。'  name='content'>";
                                     echo"<input  type='submit' value='发送'/>";
                                 echo"</form>";
                             echo"</div>";
-                            forEach( $news[$i].comments as $comment) {
+                            forEach( $news[$i]['comments'] as $comment) {
                             echo"<div class='col-md-12'>";
-                                echo"<span style='display:inline-block;font-size:18px;font-weight:600;min-width: 50px;'>."comment.nickname."</span>";
-                                echo"<span>".$comment.content."</span>";
+                                echo"<span style='display:inline-block;font-size:18px;font-weight:600;min-width: 50px;'>".$comment['nickname']."</span>";
+                                echo"<span>".$comment['content']."</span>";
 
                             echo"</div>";
-                            })
+                            }
                         echo"</div>";
 
                     echo"</div>";
