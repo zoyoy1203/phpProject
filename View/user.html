@@ -93,6 +93,10 @@
             background: #F19482;
             border: none;
         }
+        .new_img{
+            width: 100px;
+            height:100px;
+        }
     </style>
 </head>
 <body>
@@ -177,18 +181,23 @@
         </div>
         <div class="news  col-md-8 col-sm-12 col-12">
             <h2 class="col-md-12">我的动态</h2>
-            <!--<% for(var i= 0;i<news.length;i++){%>-->
-            <!--<div class="new">-->
-            <!--<div class="col-md-12">-->
-            <!--<%= news[i].text%>-->
-            <!--</div>-->
-            <!--<img class="new_img col-md-12" src=" <%= news[i].img%>" alt="">-->
-            <!--<p class="col-md-12">-->
-            <!--<span>发布时间：</span>-->
-            <!--<%= news[i].createtime%>-->
-            <!--</p>-->
-            <!--</div>-->
-            <!--<% }%>-->
+            <?php
+                    for($i= 0;$i< count($news);$i++){
+                    echo"<div class='new'>";
+                            echo"<div class='col-md-12'>";
+                                echo $news[$i]['content'];
+                            echo"</div>";
+                            echo"<img class='new_img col-md-12' src='".$news[$i]["img"][0]."'>";
+                            echo"<img class='new_img col-md-12' src='".$news[$i]["img"][1]."'>";
+                            echo"<img class='new_img col-md-12' src='".$news[$i]["img"][2]."'>";
+                            echo"<p class='col-md-12'>";
+                                echo $news[$i]['createtime'];
+                            echo"</p>";
+                        echo"</div>";
+
+                    }
+
+            ?>
         </div>
 
     </div>
@@ -198,7 +207,7 @@
 
 <!--引入jQuery-->
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script src="public/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 <script>
     function showImage() {
         var docObj = document.getElementById("doc");

@@ -189,16 +189,14 @@
                             echo"<img class='new_img col-md-12' src='".$news[$i]["img"][2]."'>";
                             echo"<div class='col-md-12'>";
                                 echo $news[$i]['createtime'];
-                                echo"<button class='addlike'>";
-                                    echo"<div class='id' style='display: none;'>". $news[$i]['id']."</div>";
-                                    echo"<div class='like' style='display: none;'> ".$news[$i]['like'] ."</div>";
+                                echo"<a href='/phpProject/?a=addLike&id=".$news[$i]["id"]."&like=".$news[$i]["like"]."'>";
                                     if($news[$i]['like']){
                                     echo '取消点赞';
                                     }else{
                                     echo '点赞';
                                     }
 
-                                echo"</button>";
+                                echo"</a>";
                                 echo"<div>";
                                     forEach( $news[$i]['like_users'] as $user) {
                                     echo"<img style='width:30px;height:30px;' src='".$user["avatar"]."' >";
@@ -207,7 +205,7 @@
 
                             echo"</div>";
                             echo"<div class='col-md-12 comments'>";
-                                echo"<form action='/user/addcomments'  class='row' method='post'>";
+                                echo"<form action='/phpProject/?a=addcomments'  class='row' method='post'>";
                                     echo"<input type='text' value='".$news[$i]["id"]."' style='visibility: hidden;width: 0;' name='newid'>";
                                     echo"<input   type='text' placeholder='请输入评论。。'  name='content'>";
                                     echo"<input  type='submit' value='发送'/>";
@@ -293,14 +291,16 @@
 </script>
 <script>
     $(document).ready(function () {
+
         // 删除数据
         $('.addlike').on('click',function () {
+            console.log("----------------");
             var id = $.trim($(this).children('.id').text());
             var like = $.trim($(this).children('.like').text());
             // 将数据传递到服务器中
             $.ajax({
                 type:"POST",
-                url:'/user/addlike',
+                url:'/phpProject/?a=addLike',
                 data:{
                     id:id,
                     like:like
@@ -316,4 +316,3 @@
 </body>
 
 </html>
-【=

@@ -189,10 +189,19 @@ class UserController {
     public function user() {
         $errinfo = '';
         $username = $_SESSION['username'];
+        $userid = $_SESSION['userid'];
         $sql = "SELECT * FROM user WHERE username='$username'";
         $res = mysqli_query($this->link,$sql);
         $user = mysqli_fetch_assoc($res);
-//        var_dump($user);
+
+        // 查询所有动态的点赞信息
+        $sql1 = "SELECT * from `news` WHERE user_id=".$userid;
+        $res1 = mysqli_query($this->link,$sql1);
+        $news = [];
+        while($result1 = mysqli_fetch_assoc($res1)){
+            $result1['img'] = explode( ',',$result1['img']);
+            array_push( $news,$result1);
+        }
 
         require 'View/user.html';
     }
@@ -289,10 +298,10 @@ class UserController {
             $sql1 = "SELECT like_news.id,`user`.id 'uid',`user`.avatar,`user`.nickname FROM `user`,like_news WHERE `user`.id=like_news.user_id AND like_news.news_id=".$result['id'];
             $res1 = mysqli_query($this->link,$sql1);
             $result['like_users'] = [];
-            $result['like'] = false;
+            $result['like'] = 0;
             while($result1 = mysqli_fetch_assoc($res1)){
                 if( $result1['uid'] === $_SESSION['userid']){
-                    $result['like'] = true;
+                    $result['like'] = 1;
                 }
                 array_push( $result['like_users'],$result1);
             }
@@ -304,15 +313,13 @@ class UserController {
             while($result2 = mysqli_fetch_assoc($res2)){
                 array_push( $result['comments'],$result2);
             }
-
-
             array_push($news,$result);
         }
 
 
 
 
-//        var_dump($news);
+//        var_dump($news[0]['like']);
         require 'View/news.html';
     }
     public function news1($info) {
@@ -453,6 +460,40 @@ class UserController {
         }
         $this -> news1($errinfo);
 
+    }
+
+   // 点赞
+   public function addLike() {
+       $id = $_GET['id'];
+       $like = $_GET['like'];
+
+        // 根据like值判断是执行点赞语句还是取消点赞语句
+        if($like==1){
+            $sql = "DELETE FROM like_news WHERE news_id= ".$id."  AND user_id=".$_SESSION['userid'];
+        }else if($like==0){
+            $sql = "INSERT INTO like_news(news_id,user_id) VALUES(".$id.",".$_SESSION['userid'].")";
+        }
+
+       $res = mysqli_query($this->link,$sql);
+
+       $this -> news();
+   }
+
+    // 添加评论
+    public function addcomments() {
+        if(!empty($_POST)){
+
+            $newid = $_POST['newid'];
+            $userid = $_SESSION['userid'];
+            $content = $_POST['content'];
+
+
+            $sql =  "INSERT INTO `comment`(new_id,user_id,content) VALUES(".$newid.",".$userid.",'".$content."')"; // 向评论表插入用户评论信息
+//            echo $sql;
+            $res = mysqli_query($this->link,$sql);
+        }
+
+        $this -> news();
     }
 
     // 好友列表
