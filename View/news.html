@@ -258,7 +258,7 @@
                             }
                             echo"<div class='time col-md-12'>";
                                 echo $news[$i]['createtime'];
-                                echo"<a href='/phpProject/?a=addLike&id=".$news[$i]["id"]."&like=".$news[$i]["like"]."'>";
+                                echo"<a href='/phpProject/?a=addLike&id=".$news[$i]["id"]."&like=".$news[$i]["like"]."&flag=".$flag."'>";
                                     if($news[$i]['like']){
                                     echo '取消点赞';
                                     }else{

@@ -295,6 +295,8 @@ class UserController {
 
     // 动态
     public function news() {
+        // 标志是哪个方法处理的。
+        $flag = 'news';
         $errinfo = '';
         $news = [];
         // 查询所有动态
@@ -334,6 +336,8 @@ class UserController {
     }
 
     public function news1($info,$info1) {
+        // 标志是哪个方法处理的。
+        $flag = 'news1';
         $errinfo = $info;
         $errinfo1 = $info1;
         $news = [];
@@ -372,6 +376,8 @@ class UserController {
 
     // 搜索动态
     public function searchNew() {
+        // 标志是哪个方法处理的。
+        $flag = 'search';
         $errinfo = '';
         $errinfo1 =  '';
         if(!empty($_POST)) {
@@ -597,6 +603,8 @@ class UserController {
    public function addLike() {
        $id = $_GET['id'];
        $like = $_GET['like'];
+       // 标志是哪个方法处理的。
+       $flag = $_GET['flag'];
 
         // 根据like值判断是执行点赞语句还是取消点赞语句
         if($like==1){
@@ -607,7 +615,12 @@ class UserController {
 
        $res = mysqli_query($this->link,$sql);
 
-       $this -> news();
+       if($flag === 'search'){
+           $this->searchNew();
+       }else{
+           $this -> news();
+       }
+
    }
 
     // 添加评论
