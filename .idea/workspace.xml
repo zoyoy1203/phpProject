@@ -4,7 +4,6 @@
     <list default="true" id="44dee6ee-727b-4a12-be56-fa291d40cfba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/UserController.php" afterPath="$PROJECT_DIR$/Controller/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/news.html" afterPath="$PROJECT_DIR$/View/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/user.html" afterPath="$PROJECT_DIR$/View/user.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phpProject.iws" />
@@ -30,83 +29,84 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.913794" vertical-offset="849" max-vertical-offset="6479">
-              <caret line="224" column="33" selection-start-line="224" selection-start-column="33" selection-end-line="224" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.32382312" vertical-offset="2053" max-vertical-offset="3268">
+              <caret line="464" column="33" selection-start-line="464" selection-start-column="33" selection-end-line="464" selection-end-column="33" />
               <folding>
                 <element signature="n#login#0;n#UserController#0;n#!!top" expanded="false" />
-                <element signature="n#loginPost#0;n#UserController#0;n#!!top" expanded="false" />
+                <element signature="n#logout#0;n#UserController#0;n#!!top" expanded="false" />
                 <element signature="n#regis#0;n#UserController#0;n#!!top" expanded="false" />
                 <element signature="n#regisPost#0;n#UserController#0;n#!!top" expanded="false" />
                 <element signature="n#index#0;n#UserController#0;n#!!top" expanded="false" />
                 <element signature="n#foodclass#0;n#UserController#0;n#!!top" expanded="false" />
                 <element signature="n#foods#0;n#UserController#0;n#!!top" expanded="false" />
                 <element signature="n#foodDetail#0;n#UserController#0;n#!!top" expanded="false" />
+                <element signature="n#user#0;n#UserController#0;n#!!top" expanded="false" />
+                <element signature="n#user1#0;n#UserController#0;n#!!top" expanded="false" />
                 <element signature="n#updateAvatar#0;n#UserController#0;n#!!top" expanded="false" />
-                <element signature="e#7258#7520#0#PHP" expanded="false" />
-                <element signature="e#7555#7715#0#PHP" expanded="false" />
-                <element signature="e#7728#7877#0#PHP" expanded="false" />
-                <marker date="1577610813537" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
-                <marker date="1577610813537" expanded="true" signature="2661:2706" placeholder="SELECT * FRO..user..." />
-                <marker date="1577610813537" expanded="true" signature="2882:2947" placeholder="INSERT INTO ..." />
-                <marker date="1577610813537" expanded="true" signature="5861:5906" placeholder="SELECT * FRO..user..." />
-                <marker date="1577610813537" expanded="true" signature="6039:6074" placeholder="SELECT * fro..." />
-                <marker date="1577610813537" expanded="true" signature="6519:6564" placeholder="SELECT * FRO..user..." />
-                <marker date="1577610813537" expanded="true" signature="6697:6732" placeholder="SELECT * fro..." />
-                <marker date="1577610813537" expanded="true" signature="8491:8554" placeholder="UPDATE user ..." />
-                <marker date="1577610813537" expanded="true" signature="9377:9509" placeholder="SELECT news...." />
-                <marker date="1577610813537" expanded="true" signature="9719:9863" placeholder="SELECT like_..." />
-                <marker date="1577610813537" expanded="true" signature="10308:10427" placeholder="SELECT `comm..." />
-                <marker date="1577610813537" expanded="true" signature="10897:11029" placeholder="SELECT news...." />
-                <marker date="1577610813537" expanded="true" signature="11239:11383" placeholder="SELECT like_..." />
-                <marker date="1577610813537" expanded="true" signature="11828:11947" placeholder="SELECT `comm..." />
-                <marker date="1577610813537" expanded="true" signature="16085:16158" placeholder="INSERT INTO ..." />
-                <marker date="1577610813537" expanded="true" signature="16920:16978" placeholder="DELETE FROM ..." />
-                <marker date="1577610813537" expanded="true" signature="17049:17127" placeholder="INSERT INTO ..." />
-                <marker date="1577610813537" expanded="true" signature="17441:17532" placeholder="INSERT INTO ..." />
+                <element signature="e#7248#7510#0#PHP" expanded="false" />
+                <element signature="e#7545#7705#0#PHP" expanded="false" />
+                <element signature="e#7718#7867#0#PHP" expanded="false" />
+                <element signature="n#news#0;n#UserController#0;n#!!top" expanded="false" />
+                <element signature="n#searchNew#0;n#UserController#0;n#!!top" expanded="false" />
+                <element signature="n#uploadNew#0;n#UserController#0;n#!!top" expanded="false" />
+                <marker date="1577633448317" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
+                <marker date="1577633448317" expanded="true" signature="2651:2696" placeholder="SELECT * FRO..user..." />
+                <marker date="1577633448317" expanded="true" signature="2872:2937" placeholder="INSERT INTO ..." />
+                <marker date="1577633448317" expanded="true" signature="5851:5896" placeholder="SELECT * FRO..user..." />
+                <marker date="1577633448317" expanded="true" signature="6029:6064" placeholder="SELECT * fro..." />
+                <marker date="1577633448317" expanded="true" signature="6509:6554" placeholder="SELECT * FRO..user..." />
+                <marker date="1577633448317" expanded="true" signature="6687:6722" placeholder="SELECT * fro..." />
+                <marker date="1577633448317" expanded="true" signature="8481:8544" placeholder="UPDATE user ..." />
+                <marker date="1577633448317" expanded="true" signature="9367:9499" placeholder="SELECT news...." />
+                <marker date="1577633448317" expanded="true" signature="9709:9853" placeholder="SELECT like_..." />
+                <marker date="1577633448317" expanded="true" signature="10298:10417" placeholder="SELECT `comm..." />
+                <marker date="1577633448317" expanded="true" signature="10922:11054" placeholder="SELECT news...." />
+                <marker date="1577633448317" expanded="true" signature="11264:11408" placeholder="SELECT like_..." />
+                <marker date="1577633448317" expanded="true" signature="11853:11972" placeholder="SELECT `comm..." />
+                <marker date="1577633448317" expanded="true" signature="12613:12662" placeholder="SELECT * FRO..." />
+                <marker date="1577633448317" expanded="true" signature="12935:13098" placeholder="SELECT * FRO..news..." />
+                <marker date="1577633448317" expanded="true" signature="13417:13427" placeholder="..." />
+                <marker date="1577633448317" expanded="true" signature="13547:13691" placeholder="SELECT like_..." />
+                <marker date="1577633448317" expanded="true" signature="14268:14387" placeholder="SELECT `comm..." />
+                <marker date="1577633448317" expanded="true" signature="14743:16702" placeholder="SELECT * FRO..news..." />
+                <marker date="1577633448317" expanded="true" signature="14831:14963" placeholder="SELECT news...." />
+                <marker date="1577633448317" expanded="true" signature="15340:15350" placeholder="..." />
+                <marker date="1577633448317" expanded="true" signature="15470:15614" placeholder="SELECT like_..." />
+                <marker date="1577633448317" expanded="true" signature="16191:16310" placeholder="SELECT `comm..." />
+                <marker date="1577633448317" expanded="true" signature="20632:20705" placeholder="INSERT INTO ..." />
+                <marker date="1577633448317" expanded="true" signature="21507:21565" placeholder="DELETE FROM ..." />
+                <marker date="1577633448317" expanded="true" signature="21636:21714" placeholder="INSERT INTO ..." />
+                <marker date="1577633448317" expanded="true" signature="22028:22119" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1904762" vertical-offset="2106" max-vertical-offset="4940">
-              <caret line="118" column="26" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
+            <state vertical-scroll-proportion="-41.785713" vertical-offset="426" max-vertical-offset="1995">
+              <caret line="299" column="14" selection-start-line="299" selection-start-column="14" selection-end-line="299" selection-end-column="14" />
               <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#form#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.464286" vertical-offset="2336" max-vertical-offset="4617">
-              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-              <folding>
-                <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,9 +130,9 @@
         <option value="$PROJECT_DIR$/View/index.html" />
         <option value="$PROJECT_DIR$/View/foods.html" />
         <option value="$PROJECT_DIR$/View/foodDetail.html" />
-        <option value="$PROJECT_DIR$/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/View/user.html" />
         <option value="$PROJECT_DIR$/View/news.html" />
+        <option value="$PROJECT_DIR$/Controller/UserController.php" />
       </list>
     </option>
   </component>
@@ -240,6 +240,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phpProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phpProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phpProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phpProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -276,6 +308,9 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -283,9 +318,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -304,7 +336,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1490" height="880" extended-state="6" />
+    <frame x="-8" y="-8" width="1490" height="880" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -313,19 +345,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25576663" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21777476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -346,7 +378,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -356,15 +388,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2375" max-vertical-offset="5206">
           <caret line="173" column="48" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="48" />
           <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -377,14 +412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4009">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -392,7 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1766" max-vertical-offset="2508">
           <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -400,7 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1684" max-vertical-offset="2413">
           <caret line="103" column="40" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -410,35 +435,50 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#login#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#loginPost#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#regis#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#regisPost#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#index#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foodclass#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foods#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foodDetail#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user1#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#updateAvatar#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="e#7258#7520#0#PHP" expanded="false" />
-            <element signature="e#7555#7715#0#PHP" expanded="false" />
-            <element signature="e#7728#7877#0#PHP" expanded="false" />
-            <marker date="1577610813537" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2661:2706" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2882:2947" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="5861:5906" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6039:6074" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="6519:6564" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6697:6732" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="8491:8554" placeholder="UPDATE user ..." />
-            <marker date="1577610813537" expanded="true" signature="9377:9509" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="9719:9863" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="10308:10427" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="10897:11029" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="11239:11383" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="11828:11947" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="16085:16158" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="16920:16978" placeholder="DELETE FROM ..." />
-            <marker date="1577610813537" expanded="true" signature="17049:17127" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="17441:17532" placeholder="INSERT INTO ..." />
+            <element signature="e#7248#7510#0#PHP" expanded="false" />
+            <element signature="e#7545#7705#0#PHP" expanded="false" />
+            <element signature="e#7718#7867#0#PHP" expanded="false" />
+            <element signature="n#news#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#searchNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#uploadNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <marker date="1577633448317" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2651:2696" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2872:2937" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="5851:5896" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6029:6064" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="6509:6554" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6687:6722" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="8481:8544" placeholder="UPDATE user ..." />
+            <marker date="1577633448317" expanded="true" signature="9367:9499" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="9709:9853" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="10298:10417" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="10922:11054" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="11264:11408" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="11853:11972" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="12613:12662" placeholder="SELECT * FRO..." />
+            <marker date="1577633448317" expanded="true" signature="12935:13098" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="13417:13427" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="13547:13691" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="14268:14387" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="14743:16702" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="14831:14963" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="15340:15350" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="15470:15614" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="16191:16310" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="20632:20705" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="21507:21565" placeholder="DELETE FROM ..." />
+            <marker date="1577633448317" expanded="true" signature="21636:21714" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="22028:22119" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -448,15 +488,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3287" max-vertical-offset="5738">
           <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
           <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -469,14 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="3838">
           <caret line="150" column="48" selection-start-line="150" selection-start-column="48" selection-end-line="150" selection-end-column="48" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -484,7 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1766" max-vertical-offset="2508">
           <caret line="108" column="40" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -492,7 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1684" max-vertical-offset="2413">
           <caret line="103" column="45" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -502,35 +535,50 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#login#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#loginPost#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#regis#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#regisPost#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#index#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foodclass#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foods#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foodDetail#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user1#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#updateAvatar#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="e#7258#7520#0#PHP" expanded="false" />
-            <element signature="e#7555#7715#0#PHP" expanded="false" />
-            <element signature="e#7728#7877#0#PHP" expanded="false" />
-            <marker date="1577610813537" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2661:2706" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2882:2947" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="5861:5906" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6039:6074" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="6519:6564" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6697:6732" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="8491:8554" placeholder="UPDATE user ..." />
-            <marker date="1577610813537" expanded="true" signature="9377:9509" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="9719:9863" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="10308:10427" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="10897:11029" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="11239:11383" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="11828:11947" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="16085:16158" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="16920:16978" placeholder="DELETE FROM ..." />
-            <marker date="1577610813537" expanded="true" signature="17049:17127" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="17441:17532" placeholder="INSERT INTO ..." />
+            <element signature="e#7248#7510#0#PHP" expanded="false" />
+            <element signature="e#7545#7705#0#PHP" expanded="false" />
+            <element signature="e#7718#7867#0#PHP" expanded="false" />
+            <element signature="n#news#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#searchNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#uploadNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <marker date="1577633448317" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2651:2696" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2872:2937" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="5851:5896" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6029:6064" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="6509:6554" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6687:6722" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="8481:8544" placeholder="UPDATE user ..." />
+            <marker date="1577633448317" expanded="true" signature="9367:9499" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="9709:9853" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="10298:10417" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="10922:11054" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="11264:11408" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="11853:11972" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="12613:12662" placeholder="SELECT * FRO..." />
+            <marker date="1577633448317" expanded="true" signature="12935:13098" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="13417:13427" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="13547:13691" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="14268:14387" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="14743:16702" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="14831:14963" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="15340:15350" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="15470:15614" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="16191:16310" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="20632:20705" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="21507:21565" placeholder="DELETE FROM ..." />
+            <marker date="1577633448317" expanded="true" signature="21636:21714" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="22028:22119" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -539,14 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2094" max-vertical-offset="3838">
           <caret line="175" column="16" selection-start-line="173" selection-start-column="10" selection-end-line="175" selection-end-column="16" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -555,15 +595,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2520" max-vertical-offset="5320">
           <caret line="195" column="48" selection-start-line="195" selection-start-column="48" selection-end-line="195" selection-end-column="48" />
           <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -576,7 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1684" max-vertical-offset="2413">
           <caret line="103" column="45" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -586,35 +628,50 @@
           <caret line="232" column="20" selection-start-line="232" selection-start-column="20" selection-end-line="232" selection-end-column="20" />
           <folding>
             <element signature="n#login#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#loginPost#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#regis#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#regisPost#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#index#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foodclass#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foods#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foodDetail#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user1#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#updateAvatar#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="e#7258#7520#0#PHP" expanded="false" />
-            <element signature="e#7555#7715#0#PHP" expanded="false" />
-            <element signature="e#7728#7877#0#PHP" expanded="false" />
-            <marker date="1577610813537" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2661:2706" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2882:2947" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="5861:5906" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6039:6074" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="6519:6564" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6697:6732" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="8491:8554" placeholder="UPDATE user ..." />
-            <marker date="1577610813537" expanded="true" signature="9377:9509" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="9719:9863" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="10308:10427" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="10897:11029" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="11239:11383" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="11828:11947" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="16085:16158" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="16920:16978" placeholder="DELETE FROM ..." />
-            <marker date="1577610813537" expanded="true" signature="17049:17127" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="17441:17532" placeholder="INSERT INTO ..." />
+            <element signature="e#7248#7510#0#PHP" expanded="false" />
+            <element signature="e#7545#7705#0#PHP" expanded="false" />
+            <element signature="e#7718#7867#0#PHP" expanded="false" />
+            <element signature="n#news#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#searchNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#uploadNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <marker date="1577633448317" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2651:2696" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2872:2937" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="5851:5896" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6029:6064" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="6509:6554" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6687:6722" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="8481:8544" placeholder="UPDATE user ..." />
+            <marker date="1577633448317" expanded="true" signature="9367:9499" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="9709:9853" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="10298:10417" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="10922:11054" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="11264:11408" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="11853:11972" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="12613:12662" placeholder="SELECT * FRO..." />
+            <marker date="1577633448317" expanded="true" signature="12935:13098" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="13417:13427" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="13547:13691" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="14268:14387" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="14743:16702" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="14831:14963" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="15340:15350" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="15470:15614" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="16191:16310" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="20632:20705" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="21507:21565" placeholder="DELETE FROM ..." />
+            <marker date="1577633448317" expanded="true" signature="21636:21714" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="22028:22119" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -623,14 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1805" max-vertical-offset="3838">
           <caret line="149" column="41" selection-start-line="149" selection-start-column="26" selection-end-line="149" selection-end-column="41" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -639,15 +688,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3268">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -660,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="1634">
           <caret line="96" column="45" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,35 +721,50 @@
           <caret line="143" column="5" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
           <folding>
             <element signature="n#login#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#loginPost#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#regis#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#regisPost#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#index#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foodclass#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foods#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foodDetail#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user1#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#updateAvatar#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="e#7258#7520#0#PHP" expanded="false" />
-            <element signature="e#7555#7715#0#PHP" expanded="false" />
-            <element signature="e#7728#7877#0#PHP" expanded="false" />
-            <marker date="1577610813537" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2661:2706" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2882:2947" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="5861:5906" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6039:6074" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="6519:6564" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6697:6732" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="8491:8554" placeholder="UPDATE user ..." />
-            <marker date="1577610813537" expanded="true" signature="9377:9509" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="9719:9863" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="10308:10427" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="10897:11029" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="11239:11383" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="11828:11947" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="16085:16158" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="16920:16978" placeholder="DELETE FROM ..." />
-            <marker date="1577610813537" expanded="true" signature="17049:17127" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="17441:17532" placeholder="INSERT INTO ..." />
+            <element signature="e#7248#7510#0#PHP" expanded="false" />
+            <element signature="e#7545#7705#0#PHP" expanded="false" />
+            <element signature="e#7718#7867#0#PHP" expanded="false" />
+            <element signature="n#news#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#searchNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#uploadNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <marker date="1577633448317" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2651:2696" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2872:2937" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="5851:5896" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6029:6064" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="6509:6554" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6687:6722" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="8481:8544" placeholder="UPDATE user ..." />
+            <marker date="1577633448317" expanded="true" signature="9367:9499" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="9709:9853" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="10298:10417" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="10922:11054" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="11264:11408" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="11853:11972" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="12613:12662" placeholder="SELECT * FRO..." />
+            <marker date="1577633448317" expanded="true" signature="12935:13098" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="13417:13427" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="13547:13691" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="14268:14387" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="14743:16702" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="14831:14963" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="15340:15350" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="15470:15614" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="16191:16310" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="20632:20705" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="21507:21565" placeholder="DELETE FROM ..." />
+            <marker date="1577633448317" expanded="true" signature="21636:21714" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="22028:22119" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -721,14 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -737,15 +795,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -793,7 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="1634">
           <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,35 +863,50 @@
           <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
           <folding>
             <element signature="n#login#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#loginPost#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#regis#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#regisPost#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#index#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foodclass#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foods#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foodDetail#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user1#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#updateAvatar#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="e#7258#7520#0#PHP" expanded="false" />
-            <element signature="e#7555#7715#0#PHP" expanded="false" />
-            <element signature="e#7728#7877#0#PHP" expanded="false" />
-            <marker date="1577610813537" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2661:2706" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2882:2947" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="5861:5906" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6039:6074" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="6519:6564" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6697:6732" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="8491:8554" placeholder="UPDATE user ..." />
-            <marker date="1577610813537" expanded="true" signature="9377:9509" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="9719:9863" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="10308:10427" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="10897:11029" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="11239:11383" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="11828:11947" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="16085:16158" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="16920:16978" placeholder="DELETE FROM ..." />
-            <marker date="1577610813537" expanded="true" signature="17049:17127" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="17441:17532" placeholder="INSERT INTO ..." />
+            <element signature="e#7248#7510#0#PHP" expanded="false" />
+            <element signature="e#7545#7705#0#PHP" expanded="false" />
+            <element signature="e#7718#7867#0#PHP" expanded="false" />
+            <element signature="n#news#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#searchNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#uploadNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <marker date="1577633448317" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2651:2696" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2872:2937" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="5851:5896" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6029:6064" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="6509:6554" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6687:6722" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="8481:8544" placeholder="UPDATE user ..." />
+            <marker date="1577633448317" expanded="true" signature="9367:9499" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="9709:9853" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="10298:10417" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="10922:11054" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="11264:11408" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="11853:11972" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="12613:12662" placeholder="SELECT * FRO..." />
+            <marker date="1577633448317" expanded="true" signature="12935:13098" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="13417:13427" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="13547:13691" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="14268:14387" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="14743:16702" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="14831:14963" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="15340:15350" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="15470:15614" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="16191:16310" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="20632:20705" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="21507:21565" placeholder="DELETE FROM ..." />
+            <marker date="1577633448317" expanded="true" signature="21636:21714" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="22028:22119" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -869,7 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="2033">
           <caret line="9" column="40" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,35 +953,50 @@
           <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding>
             <element signature="n#login#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#loginPost#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#regis#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#regisPost#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#index#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foodclass#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foods#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#foodDetail#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user1#0;n#UserController#0;n#!!top" expanded="false" />
             <element signature="n#updateAvatar#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="e#7258#7520#0#PHP" expanded="false" />
-            <element signature="e#7555#7715#0#PHP" expanded="false" />
-            <element signature="e#7728#7877#0#PHP" expanded="false" />
-            <marker date="1577610813537" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2661:2706" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2882:2947" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="5861:5906" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6039:6074" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="6519:6564" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6697:6732" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="8491:8554" placeholder="UPDATE user ..." />
-            <marker date="1577610813537" expanded="true" signature="9377:9509" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="9719:9863" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="10308:10427" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="10897:11029" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="11239:11383" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="11828:11947" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="16085:16158" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="16920:16978" placeholder="DELETE FROM ..." />
-            <marker date="1577610813537" expanded="true" signature="17049:17127" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="17441:17532" placeholder="INSERT INTO ..." />
+            <element signature="e#7248#7510#0#PHP" expanded="false" />
+            <element signature="e#7545#7705#0#PHP" expanded="false" />
+            <element signature="e#7718#7867#0#PHP" expanded="false" />
+            <element signature="n#news#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#searchNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#uploadNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <marker date="1577633448317" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2651:2696" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2872:2937" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="5851:5896" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6029:6064" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="6509:6554" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6687:6722" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="8481:8544" placeholder="UPDATE user ..." />
+            <marker date="1577633448317" expanded="true" signature="9367:9499" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="9709:9853" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="10298:10417" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="10922:11054" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="11264:11408" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="11853:11972" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="12613:12662" placeholder="SELECT * FRO..." />
+            <marker date="1577633448317" expanded="true" signature="12935:13098" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="13417:13427" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="13547:13691" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="14268:14387" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="14743:16702" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="14831:14963" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="15340:15350" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="15470:15614" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="16191:16310" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="20632:20705" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="21507:21565" placeholder="DELETE FROM ..." />
+            <marker date="1577633448317" expanded="true" signature="21636:21714" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="22028:22119" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -992,7 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1766" max-vertical-offset="2508">
           <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1000,46 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1684" max-vertical-offset="2413">
           <caret line="103" column="40" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.913794" vertical-offset="849" max-vertical-offset="6479">
-          <caret line="224" column="33" selection-start-line="224" selection-start-column="33" selection-end-line="224" selection-end-column="33" />
-          <folding>
-            <element signature="n#login#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#loginPost#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#regis#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#regisPost#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#index#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#foodclass#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#foods#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#foodDetail#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="n#updateAvatar#0;n#UserController#0;n#!!top" expanded="false" />
-            <element signature="e#7258#7520#0#PHP" expanded="false" />
-            <element signature="e#7555#7715#0#PHP" expanded="false" />
-            <element signature="e#7728#7877#0#PHP" expanded="false" />
-            <marker date="1577610813537" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2661:2706" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="2882:2947" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="5861:5906" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6039:6074" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="6519:6564" placeholder="SELECT * FRO..user..." />
-            <marker date="1577610813537" expanded="true" signature="6697:6732" placeholder="SELECT * fro..." />
-            <marker date="1577610813537" expanded="true" signature="8491:8554" placeholder="UPDATE user ..." />
-            <marker date="1577610813537" expanded="true" signature="9377:9509" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="9719:9863" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="10308:10427" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="10897:11029" placeholder="SELECT news...." />
-            <marker date="1577610813537" expanded="true" signature="11239:11383" placeholder="SELECT like_..." />
-            <marker date="1577610813537" expanded="true" signature="11828:11947" placeholder="SELECT `comm..." />
-            <marker date="1577610813537" expanded="true" signature="16085:16158" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="16920:16978" placeholder="DELETE FROM ..." />
-            <marker date="1577610813537" expanded="true" signature="17049:17127" placeholder="INSERT INTO ..." />
-            <marker date="1577610813537" expanded="true" signature="17441:17532" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1047,35 +1095,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.464286" vertical-offset="2336" max-vertical-offset="4617">
           <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1904762" vertical-offset="2106" max-vertical-offset="4940">
-          <caret line="118" column="26" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
+        <state vertical-scroll-proportion="-41.785713" vertical-offset="426" max-vertical-offset="1995">
+          <caret line="299" column="14" selection-start-line="299" selection-start-column="14" selection-end-line="299" selection-end-column="14" />
           <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#4;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32382312" vertical-offset="2053" max-vertical-offset="3268">
+          <caret line="464" column="33" selection-start-line="464" selection-start-column="33" selection-end-line="464" selection-end-column="33" />
+          <folding>
+            <element signature="n#login#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#regis#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#regisPost#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#index#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#foodclass#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#foods#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#foodDetail#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#user1#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#updateAvatar#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="e#7248#7510#0#PHP" expanded="false" />
+            <element signature="e#7545#7705#0#PHP" expanded="false" />
+            <element signature="e#7718#7867#0#PHP" expanded="false" />
+            <element signature="n#news#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#searchNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <element signature="n#uploadNew#0;n#UserController#0;n#!!top" expanded="false" />
+            <marker date="1577633448317" expanded="true" signature="561:606" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2651:2696" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="2872:2937" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="5851:5896" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6029:6064" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="6509:6554" placeholder="SELECT * FRO..user..." />
+            <marker date="1577633448317" expanded="true" signature="6687:6722" placeholder="SELECT * fro..." />
+            <marker date="1577633448317" expanded="true" signature="8481:8544" placeholder="UPDATE user ..." />
+            <marker date="1577633448317" expanded="true" signature="9367:9499" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="9709:9853" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="10298:10417" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="10922:11054" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="11264:11408" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="11853:11972" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="12613:12662" placeholder="SELECT * FRO..." />
+            <marker date="1577633448317" expanded="true" signature="12935:13098" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="13417:13427" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="13547:13691" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="14268:14387" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="14743:16702" placeholder="SELECT * FRO..news..." />
+            <marker date="1577633448317" expanded="true" signature="14831:14963" placeholder="SELECT news...." />
+            <marker date="1577633448317" expanded="true" signature="15340:15350" placeholder="..." />
+            <marker date="1577633448317" expanded="true" signature="15470:15614" placeholder="SELECT like_..." />
+            <marker date="1577633448317" expanded="true" signature="16191:16310" placeholder="SELECT `comm..." />
+            <marker date="1577633448317" expanded="true" signature="20632:20705" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="21507:21565" placeholder="DELETE FROM ..." />
+            <marker date="1577633448317" expanded="true" signature="21636:21714" placeholder="INSERT INTO ..." />
+            <marker date="1577633448317" expanded="true" signature="22028:22119" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

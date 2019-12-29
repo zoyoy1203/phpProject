@@ -197,7 +197,7 @@
 
                         <div class="col-md-1 col-1"></div>
                         <input type='button' value="上传图片" class="col-5 col-md-2" OnClick='javascript:$("#doc").click();'/>
-                        <input type="file" name="img[]" multiple   id="doc" onchange="showImage();" style="display: none;" />
+                        <input type="file" name="img[]" multiple id="doc" onchange="showImage();" style="display: none;" />
                         <input type="submit"class="col-5 col-md-1" value="发送"/>
                         <div class="col-md-1 col-1"></div>
                     </form>
@@ -209,6 +209,24 @@
                 </div>
                 <p class="text-center error">
                     <?= $errinfo ?>
+                </p>
+                <h3>搜索动态</h3>
+                <div id="search">
+                    <form action="/phpProject/?a=searchNew"  class="row" method="post">
+                        <div class="col-md-1 col-1"></div>
+                        <input type="text" placeholder="搜索用户" class="col-10 col-md-6" name="s_username" style="border-left: 1px solid #F19482;">
+                        <div class="col-md-5"></div>
+
+                        <div class="col-md-1 col-1"></div>
+                        <input type="text" placeholder="搜索内容" class="col-10 col-md-6" name="s_content" style="border-left: 1px solid #F19482;">
+
+
+                        <input type="submit"class="col-5 col-md-1" value="搜索"/>
+
+                    </form>
+                </div>
+                <p class="text-center error">
+                    <?= $errinfo1 ?>
                 </p>
             </div>
 
@@ -274,8 +292,6 @@
                     echo"</div>";
                 echo "</div>";
 
-
-
                 }
 
                 }
@@ -287,7 +303,7 @@
 </div>
 
 <!--引入jQuery-->
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="public/js/jquery-3.4.1.min.js"></script>
 <script src="public/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 <script>
     function showImage() {
@@ -341,28 +357,7 @@
     }
 </script>
 <script>
-    $(document).ready(function () {
 
-        // 删除数据
-        $('.addlike').on('click',function () {
-            console.log("----------------");
-            var id = $.trim($(this).children('.id').text());
-            var like = $.trim($(this).children('.like').text());
-            // 将数据传递到服务器中
-            $.ajax({
-                type:"POST",
-                url:'/phpProject/?a=addLike',
-                data:{
-                    id:id,
-                    like:like
-                },
-                success:function (data) {
-                    location.reload();
-                }
-            })
-        });
-
-    });
 </script>
 </body>
 

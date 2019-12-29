@@ -54,7 +54,8 @@ class UserController {
         $_SESSION = [];
         setcookie(session_name(),'',time()-3000);
         session_destroy();
-        require 'View/index.html';
+
+        $this->index();
 
     }
 
@@ -331,9 +332,10 @@ class UserController {
 //        var_dump($news[0]['img']);
         require 'View/news.html';
     }
-    public function news1($info) {
-        $errinfo = $info;
 
+    public function news1($info,$info1) {
+        $errinfo = $info;
+        $errinfo1 = $info1;
         $news = [];
         // 查询所有动态
         $sql = "SELECT news.*,`user`.avatar,`user`.nickname FROM `user`,news WHERE `user`.id=news.user_id ORDER BY news.createtime DESC,news.id DESC";
@@ -368,10 +370,101 @@ class UserController {
         require 'View/news.html';
     }
 
+    // 搜索动态
+    public function searchNew() {
+        $errinfo = '';
+        $errinfo1 =  '';
+        if(!empty($_POST)) {
+            $username = $_POST['s_username'];
+            $content = $_POST['s_content'];
+            $news = [];
+            if($username){
+                $sql = "SELECT * FROM `user` WHERE username = '$username'";
+                $res = mysqli_query($this->link,$sql);
+                $r = mysqli_fetch_assoc($res);
+                if(empty($r)){
+                    $errinfo1 = '用户名不存在！';
+                }else{
+                    $s_userid = $r['id'];
+                    $sql3 = "SELECT news.*,`user`.avatar,`user`.nickname FROM `user`,news WHERE `user`.id=news.user_id AND news.user_id = '$s_userid' ORDER BY news.createtime DESC,news.id DESC";
+                    $res3 = mysqli_query($this->link,$sql3);
+
+                    while($result = mysqli_fetch_assoc($res3)){
+
+                        $result['img'] = explode( ',',$result['img']);
+
+                        // 动态内容关键字标红
+                        $result['content'] = str_replace($content,"<span style='color:red;'><b>$content</b></span>",$result['content']);
+
+                        // 查询相应动态的点赞信息
+                        $sql1 = "SELECT like_news.id,`user`.id 'uid',`user`.avatar,`user`.nickname FROM `user`,like_news WHERE `user`.id=like_news.user_id AND like_news.news_id=".$result['id'];
+                        $res1 = mysqli_query($this->link,$sql1);
+                        $result['like_users'] = [];
+                        $result['like'] = 0;
+                        while($result1 = mysqli_fetch_assoc($res1)){
+                            if( $result1['uid'] === $_SESSION['userid']){
+                                $result['like'] = 1;
+                            }
+                            array_push( $result['like_users'],$result1);
+                        }
+
+                        // 查询所有动态的相应评论
+                        $sql2 = "SELECT `comment`.*,`user`.nickname FROM `comment`,`user` WHERE new_id=".$result['id']." AND `comment`.user_id=`user`.id";
+                        $res2 = mysqli_query($this->link,$sql2);
+                        $result['comments'] = [];
+                        while($result2 = mysqli_fetch_assoc($res2)){
+                            array_push( $result['comments'],$result2);
+                        }
+                        array_push($news,$result);
+                    }
+                }
+            }else{
+                // 查询所有动态
+                $sql = "SELECT news.*,`user`.avatar,`user`.nickname FROM `user`,news WHERE `user`.id=news.user_id ORDER BY news.createtime DESC,news.id DESC";
+                $res = mysqli_query($this->link,$sql);
+
+                while($result = mysqli_fetch_assoc($res)){
+                    if(strpos($result['content'],$content)!== false){
+                        $result['img'] = explode( ',',$result['img']);
+
+                        // 动态内容关键字标红
+                        $result['content'] = str_replace($content,"<span style='color:red;'><b>$content</b></span>",$result['content']);
+
+                        // 查询所有动态的点赞信息
+                        $sql1 = "SELECT like_news.id,`user`.id 'uid',`user`.avatar,`user`.nickname FROM `user`,like_news WHERE `user`.id=like_news.user_id AND like_news.news_id=".$result['id'];
+                        $res1 = mysqli_query($this->link,$sql1);
+                        $result['like_users'] = [];
+                        $result['like'] = 0;
+                        while($result1 = mysqli_fetch_assoc($res1)){
+                            if( $result1['uid'] === $_SESSION['userid']){
+                                $result['like'] = 1;
+                            }
+                            array_push( $result['like_users'],$result1);
+                        }
+
+                        // 查询所有动态的相应评论
+                        $sql2 = "SELECT `comment`.*,`user`.nickname FROM `comment`,`user` WHERE new_id=".$result['id']." AND `comment`.user_id=`user`.id";
+                        $res2 = mysqli_query($this->link,$sql2);
+                        $result['comments'] = [];
+                        while($result2 = mysqli_fetch_assoc($res2)){
+                            array_push( $result['comments'],$result2);
+                        }
+                        array_push($news,$result);
+                    }
+
+                }
+
+
+            }
+
+        }
+        require 'View/news.html';
+    }
 
     // 发布动态
     public function uploadNew() {
         $errinfo =  '';
+        $errinfo1 = '';
         if(!empty($_POST)){
 //            var_dump($_FILES['img']['name']);
 //            echo "<br />";
@@ -387,7 +480,7 @@ class UserController {
                     $content = $_POST['text'];
                 }else{
                     $errinfo = '评论内容超过200中文字！';
-                    $this -> news1($errinfo);
+                    $this -> news1($errinfo,$errinfo1);
                     die;
                 }
             }
@@ -404,19 +497,19 @@ class UserController {
                 if(is_array($fileMimes)) {
                     if(!in_array($_FILES['img']['type'][$i],$fileMimes)){
                         $errinfo =  '文件类型不允许为：gif, png, jpg之外的类型！';
-                        $this -> news1($errinfo);
+                        $this -> news1($errinfo,$errinfo1);
                         die;
                     }
                 }
                 // 文件大小限制
                 if($_FILES['img']['size'][$i]>6291456){
                     $errinfo =  '禁止上传6MB以上的文件！';
-                    $this -> news1($errinfo);
+                    $this -> news1($errinfo,$errinfo1);
                     die;
                 }
                 if($_FILES['img']['error'][$i] !=0 ){
                     $errinfo =  '上传有错误';
-                    $this -> news1($errinfo);
+                    $this -> news1($errinfo,$errinfo1);
                     die;
                 }
 
@@ -436,7 +529,7 @@ class UserController {
                         array_push($imgs,$fileName1);
                     }else {
                         $errinfo = '动态上传错误！1';
-                        $this -> news1($errinfo);
+                        $this -> news1($errinfo,$errinfo1);
                         die;
                     }
                 }elseif($i==1){
@@ -448,7 +541,7 @@ class UserController {
                         array_push($imgs,$fileName2);
                     }else {
                         $errinfo = '动态上传错误！2';
-                        $this -> news1($errinfo);
+                        $this -> news1($errinfo,$errinfo1);
                         die;
                     }
 
@@ -461,7 +554,7 @@ class UserController {
                         array_push($imgs,$fileName3);
                     }else {
                         $errinfo = '动态上传错误！3';
-                        $this -> news1($errinfo);
+                        $this -> news1($errinfo,$errinfo1);
                         die;
                     }
 
@@ -480,23 +573,23 @@ class UserController {
                 $result = mysqli_query($this->link,$sql);
                 if($result){
                     $errinfo =  '动态发布成功！';
-                    $this -> news1($errinfo);
+                    $this -> news1($errinfo,$errinfo1);
                     die;
                 }else{
                     $errinfo = '数据库修改错误！';
-                    $this -> news1($errinfo);
+                    $this -> news1($errinfo,$errinfo1);
                     die;
                 }
 
             }else{
                 $errinfo = '未登录，请先登录！';
-                $this -> news1($errinfo);
+                $this -> news1($errinfo,$errinfo1);
                 die;
             }
             require 'View/user.html';
 
         }
-        $this -> news1($errinfo);
+        $this -> news1($errinfo,$errinfo1);
 
     }
 
@@ -543,4 +636,5 @@ class UserController {
     public function moreFriends() {
         require 'View/moreFriends.html';
     }
+
 }
