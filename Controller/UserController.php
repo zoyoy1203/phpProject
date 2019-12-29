@@ -208,10 +208,19 @@ class UserController {
     public function user1($info) {
         $errinfo = $info;
         $username = $_SESSION['username'];
+        $userid = $_SESSION['userid'];
         $sql = "SELECT * FROM user WHERE username='$username'";
         $res = mysqli_query($this->link,$sql);
         $user = mysqli_fetch_assoc($res);
-//        var_dump($user);
+
+        // 查询所有动态的点赞信息
+        $sql1 = "SELECT * from `news` WHERE user_id=".$userid;
+        $res1 = mysqli_query($this->link,$sql1);
+        $news = [];
+        while($result1 = mysqli_fetch_assoc($res1)){
+            $result1['img'] = explode( ',',$result1['img']);
+            array_push( $news,$result1);
+        }
 
         require 'View/user.html';
     }
@@ -319,18 +328,47 @@ class UserController {
 
 
 
-//        var_dump($news[0]['like']);
+//        var_dump($news[0]['img']);
         require 'View/news.html';
     }
     public function news1($info) {
         $errinfo = $info;
 
-        $sql = "SELECT * FROM news ";
+        $news = [];
+        // 查询所有动态
+        $sql = "SELECT news.*,`user`.avatar,`user`.nickname FROM `user`,news WHERE `user`.id=news.user_id ORDER BY news.createtime DESC,news.id DESC";
         $res = mysqli_query($this->link,$sql);
-        $news = mysqli_fetch_assoc($res);
 
+        while($result = mysqli_fetch_assoc($res)){
+            $result['img'] = explode( ',',$result['img']);
+
+            // 查询所有动态的点赞信息
+            $sql1 = "SELECT like_news.id,`user`.id 'uid',`user`.avatar,`user`.nickname FROM `user`,like_news WHERE `user`.id=like_news.user_id AND like_news.news_id=".$result['id'];
+            $res1 = mysqli_query($this->link,$sql1);
+            $result['like_users'] = [];
+            $result['like'] = 0;
+            while($result1 = mysqli_fetch_assoc($res1)){
+                if( $result1['uid'] === $_SESSION['userid']){
+                    $result['like'] = 1;
+                }
+                array_push( $result['like_users'],$result1);
+            }
+
+            // 查询所有动态的相应评论
+            $sql2 = "SELECT `comment`.*,`user`.nickname FROM `comment`,`user` WHERE new_id=".$result['id']." AND `comment`.user_id=`user`.id";
+            $res2 = mysqli_query($this->link,$sql2);
+            $result['comments'] = [];
+            while($result2 = mysqli_fetch_assoc($res2)){
+                array_push( $result['comments'],$result2);
+            }
+            array_push($news,$result);
+        }
+
+//        var_dump($news[0]['like']);
         require 'View/news.html';
     }
+
+
     // 发布动态
     public function uploadNew() {
         $errinfo =  '';

@@ -1,3 +1,6 @@
+<?php
+    error_reporting(E_ALL^E_NOTICE);
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -33,7 +36,7 @@
             z-index: -1;
         }
         .container{
-            background:  rgb(245, 219, 212);
+            background:  #DCEDE7;
             min-height:100% ;
             height: auto;
             padding-bottom: 30px;
@@ -46,22 +49,32 @@
             float: left;
         }
         .navbar{
-            background: #F19482;
+            background:#8DB1A3;
         }
 
         .content{
-            margin: 30px 20px 20px 30px;
+            margin: 30px 0px 20px 0px;
             background:#fff;
-            border-radius: 10px;
+            min-height: 600px;
         }
         .infos{
-            border-right:2px solid #F19482;
+            border-right:2px solid  #B3D7CB;
         }
-
+        .infos>h3,
+        .news>h3{
+            width: 160px;
+            text-align: center;
+            background:#B3D7CB;
+            border-radius: 10px;
+            margin-top: 20px;
+            height: 50px;
+            line-height: 50px;
+            color: #fff;
+        }
         #localImag{
             position: absolute;
-            top: 40px;
-            left: 140px;
+            top: 70px;
+            left: 120px;
         }
         .info_ul{
             margin: 0;
@@ -72,6 +85,17 @@
             list-style: none;
             height: 40px;
             line-height: 40px;
+            background:  #B3D7CB;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+        .info_ul li>span.tag{
+            display: inline-block;
+            width: 80px;
+            color: #000;
+        }
+        .info_ul li>span{
+            color: #fff;;
         }
 
         #infos li{
@@ -81,26 +105,35 @@
 
         }
         .news{
-            margin-top: 20px;
             margin-bottom: 30px;
         }
-        textarea{
-            border: #F19482;
-            background: #F5DBD4;
+        .new{
+            border: 1px solid  #B3D7CB;
+            margin-bottom: 20px;
         }
         input,
         button{
-            background: #F19482;
+            background:  #B3D7CB;
             border: none;
+            color: #fff;;
+            border-radius: 5px;
+        }
+        .text{
+            margin: 20px 0;
         }
         .new_img{
             width: 100px;
             height:100px;
+            margin-left: 15px;
         }
+        .time{
+            color:  #8DB1A3;
+        }
+
     </style>
 </head>
 <body>
-<img id="bg" src="public/img/bg.png" alt="">
+<img id="bg" src="public/img/bg3.jpg" alt="">
 <div class="container">
     <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="#">
@@ -151,6 +184,9 @@
         <div class="infos col-md-4 col-sm-12 col-12">
             <h3>用户头像</h3>
             <img style="width: 100px;height: 100px;" src="<?=$user['avatar'] ?>" alt="">
+            <div id="localImag">
+                <img id="preview" width=-1 height=-1 style="display:none" />
+            </div>
             <form action="/phpProject/?a=updateAvatar" method="post" enctype="multipart/form-data">
                 <input type='button' value="上传头像"  OnClick='javascript:$("#doc").click();'/>
                 <input type="hidden" name="MAX_FILE_SIZE" value="6291456"/>
@@ -158,39 +194,35 @@
 
                 <input type="submit" value="确认修改"/>
             </form>
-            <div id="localImag">
-                <img id="preview" width=-1 height=-1 style="display:none" />
-            </div>
-
-            <ul class="info_ul">
-                <li>您的ID:  <span><?=$user['id']?></span></li>
-                <li>用户名:  <span><?=$user['username'] ?></span></li>
-                <li>昵称:  <span><?=$user['nickname'] ?></span></li>
-            </ul>
-            <!--座右铭：-->
-            <!--<div>-->
-            <!--<textarea name="motto" id="" cols="30" rows="5" form="mottoForm"><%= user.motto%></textarea>-->
-            <!--<form action="/user/updateMotto" method="post" id="mottoForm">-->
-            <!--&lt;!&ndash; <input type="text" value="<%= user.motto%>" name="motto"> &ndash;&gt;-->
-            <!--<button type="submit">修改座右铭</button>-->
-            <!--</form>-->
-            <!--</div>-->
             <p class="text-center error">
                 <?= $errinfo ?>
             </p>
+
+            <ul class="info_ul">
+                <li><span class="tag">您的ID: </span> <span><?=$user['id']?></span></li>
+                <li><span class="tag"> 用户名:</span>  <span><?=$user['username'] ?></span></li>
+                <li><span class="tag">昵称:</span>  <span><?=$user['nickname'] ?></span></li>
+            </ul>
+
         </div>
         <div class="news  col-md-8 col-sm-12 col-12">
-            <h2 class="col-md-12">我的动态</h2>
+            <h3 class="col-md-12">我的动态</h3>
             <?php
                     for($i= 0;$i< count($news);$i++){
                     echo"<div class='new'>";
-                            echo"<div class='col-md-12'>";
+                            echo"<div class='col-md-12 text'>";
                                 echo $news[$i]['content'];
                             echo"</div>";
-                            echo"<img class='new_img col-md-12' src='".$news[$i]["img"][0]."'>";
-                            echo"<img class='new_img col-md-12' src='".$news[$i]["img"][1]."'>";
-                            echo"<img class='new_img col-md-12' src='".$news[$i]["img"][2]."'>";
-                            echo"<p class='col-md-12'>";
+                            if($news[$i]["img"][0]){
+                            echo"<img class='new_img ' src='".$news[$i]["img"][0]."'>";
+                            }
+                            if($news[$i]["img"][1]){
+                            echo"<img class='new_img ' src='".$news[$i]["img"][1]."'>";
+                            }
+                            if($news[$i]["img"][2]){
+                            echo"<img class='new_img ' src='".$news[$i]["img"][2]."'>";
+                            }
+                            echo"<p class='time col-md-12'>";
                                 echo $news[$i]['createtime'];
                             echo"</p>";
                         echo"</div>";
