@@ -375,95 +375,101 @@ class UserController {
     }
 
     // 搜索动态
-    public function searchNew() {
+    public function searchNew($sUsername='',$sContent='') {
         // 标志是哪个方法处理的。
         $flag = 'search';
         $errinfo = '';
         $errinfo1 =  '';
+        $news = [];
+
         if(!empty($_POST)) {
-            $username = $_POST['s_username'];
-            $content = $_POST['s_content'];
-            $news = [];
-            if($username){
-                $sql = "SELECT * FROM `user` WHERE username = '$username'";
-                $res = mysqli_query($this->link,$sql);
-                $r = mysqli_fetch_assoc($res);
-                if(empty($r)){
-                    $errinfo1 = '用户名不存在！';
-                }else{
-                    $s_userid = $r['id'];
-                    $sql3 = "SELECT news.*,`user`.avatar,`user`.nickname FROM `user`,news WHERE `user`.id=news.user_id AND news.user_id = '$s_userid' ORDER BY news.createtime DESC,news.id DESC";
-                    $res3 = mysqli_query($this->link,$sql3);
+            $s_username = $_POST['s_username'];
+            $s_content = $_POST['s_content'];
+        }else{
+            $s_username = $sUsername;
+            $s_content = $sContent;
+        }
 
-                    while($result = mysqli_fetch_assoc($res3)){
-
-                        $result['img'] = explode( ',',$result['img']);
-
-                        // 动态内容关键字标红
-                        $result['content'] = str_replace($content,"<span style='color:red;'><b>$content</b></span>",$result['content']);
-
-                        // 查询相应动态的点赞信息
-                        $sql1 = "SELECT like_news.id,`user`.id 'uid',`user`.avatar,`user`.nickname FROM `user`,like_news WHERE `user`.id=like_news.user_id AND like_news.news_id=".$result['id'];
-                        $res1 = mysqli_query($this->link,$sql1);
-                        $result['like_users'] = [];
-                        $result['like'] = 0;
-                        while($result1 = mysqli_fetch_assoc($res1)){
-                            if( $result1['uid'] === $_SESSION['userid']){
-                                $result['like'] = 1;
-                            }
-                            array_push( $result['like_users'],$result1);
-                        }
-
-                        // 查询所有动态的相应评论
-                        $sql2 = "SELECT `comment`.*,`user`.nickname FROM `comment`,`user` WHERE new_id=".$result['id']." AND `comment`.user_id=`user`.id";
-                        $res2 = mysqli_query($this->link,$sql2);
-                        $result['comments'] = [];
-                        while($result2 = mysqli_fetch_assoc($res2)){
-                            array_push( $result['comments'],$result2);
-                        }
-                        array_push($news,$result);
-                    }
-                }
+        if( $s_username){
+            $sql = "SELECT * FROM `user` WHERE username = '$s_username'";
+            $res = mysqli_query($this->link,$sql);
+            $r = mysqli_fetch_assoc($res);
+            if(empty($r)){
+                $errinfo1 = '用户名不存在！';
             }else{
-                // 查询所有动态
-                $sql = "SELECT news.*,`user`.avatar,`user`.nickname FROM `user`,news WHERE `user`.id=news.user_id ORDER BY news.createtime DESC,news.id DESC";
-                $res = mysqli_query($this->link,$sql);
+                $s_userid = $r['id'];
+                $sql3 = "SELECT news.*,`user`.avatar,`user`.nickname FROM `user`,news WHERE `user`.id=news.user_id AND news.user_id = '$s_userid' ORDER BY news.createtime DESC,news.id DESC";
+                $res3 = mysqli_query($this->link,$sql3);
 
-                while($result = mysqli_fetch_assoc($res)){
-                    if(strpos($result['content'],$content)!== false){
-                        $result['img'] = explode( ',',$result['img']);
+                while($result = mysqli_fetch_assoc($res3)){
 
-                        // 动态内容关键字标红
-                        $result['content'] = str_replace($content,"<span style='color:red;'><b>$content</b></span>",$result['content']);
+                    $result['img'] = explode( ',',$result['img']);
 
-                        // 查询所有动态的点赞信息
-                        $sql1 = "SELECT like_news.id,`user`.id 'uid',`user`.avatar,`user`.nickname FROM `user`,like_news WHERE `user`.id=like_news.user_id AND like_news.news_id=".$result['id'];
-                        $res1 = mysqli_query($this->link,$sql1);
-                        $result['like_users'] = [];
-                        $result['like'] = 0;
-                        while($result1 = mysqli_fetch_assoc($res1)){
-                            if( $result1['uid'] === $_SESSION['userid']){
-                                $result['like'] = 1;
-                            }
-                            array_push( $result['like_users'],$result1);
+                    // 动态内容关键字标红
+                    $result['content'] = str_replace($s_content,"<span style='color:red;'><b>$s_content</b></span>",$result['content']);
+
+                    // 查询相应动态的点赞信息
+                    $sql1 = "SELECT like_news.id,`user`.id 'uid',`user`.avatar,`user`.nickname FROM `user`,like_news WHERE `user`.id=like_news.user_id AND like_news.news_id=".$result['id'];
+                    $res1 = mysqli_query($this->link,$sql1);
+                    $result['like_users'] = [];
+                    $result['like'] = 0;
+                    while($result1 = mysqli_fetch_assoc($res1)){
+                        if( $result1['uid'] === $_SESSION['userid']){
+                            $result['like'] = 1;
                         }
-
-                        // 查询所有动态的相应评论
-                        $sql2 = "SELECT `comment`.*,`user`.nickname FROM `comment`,`user` WHERE new_id=".$result['id']." AND `comment`.user_id=`user`.id";
-                        $res2 = mysqli_query($this->link,$sql2);
-                        $result['comments'] = [];
-                        while($result2 = mysqli_fetch_assoc($res2)){
-                            array_push( $result['comments'],$result2);
-                        }
-                        array_push($news,$result);
+                        array_push( $result['like_users'],$result1);
                     }
 
+                    // 查询所有动态的相应评论
+                    $sql2 = "SELECT `comment`.*,`user`.nickname FROM `comment`,`user` WHERE new_id=".$result['id']." AND `comment`.user_id=`user`.id";
+                    $res2 = mysqli_query($this->link,$sql2);
+                    $result['comments'] = [];
+                    while($result2 = mysqli_fetch_assoc($res2)){
+                        array_push( $result['comments'],$result2);
+                    }
+                    array_push($news,$result);
                 }
+            }
+        }else{
+            // 查询所有动态
+            $sql = "SELECT news.*,`user`.avatar,`user`.nickname FROM `user`,news WHERE `user`.id=news.user_id ORDER BY news.createtime DESC,news.id DESC";
+            $res = mysqli_query($this->link,$sql);
 
+            while($result = mysqli_fetch_assoc($res)){
+                if(strpos($result['content'],$s_content)!== false){
+                    $result['img'] = explode( ',',$result['img']);
+
+                    // 动态内容关键字标红
+                    $result['content'] = str_replace($s_content,"<span style='color:red;'><b>$s_content</b></span>",$result['content']);
+
+                    // 查询所有动态的点赞信息
+                    $sql1 = "SELECT like_news.id,`user`.id 'uid',`user`.avatar,`user`.nickname FROM `user`,like_news WHERE `user`.id=like_news.user_id AND like_news.news_id=".$result['id'];
+                    $res1 = mysqli_query($this->link,$sql1);
+                    $result['like_users'] = [];
+                    $result['like'] = 0;
+                    while($result1 = mysqli_fetch_assoc($res1)){
+                        if( $result1['uid'] === $_SESSION['userid']){
+                            $result['like'] = 1;
+                        }
+                        array_push( $result['like_users'],$result1);
+                    }
+
+                    // 查询所有动态的相应评论
+                    $sql2 = "SELECT `comment`.*,`user`.nickname FROM `comment`,`user` WHERE new_id=".$result['id']." AND `comment`.user_id=`user`.id";
+                    $res2 = mysqli_query($this->link,$sql2);
+                    $result['comments'] = [];
+                    while($result2 = mysqli_fetch_assoc($res2)){
+                        array_push( $result['comments'],$result2);
+                    }
+                    array_push($news,$result);
+                }
 
             }
 
+
         }
+
+
         require 'View/news.html';
     }
 
@@ -605,6 +611,8 @@ class UserController {
        $like = $_GET['like'];
        // 标志是哪个方法处理的。
        $flag = $_GET['flag'];
+       $sUsername = $_GET['sUsername'];
+       $sContnet = $_GET['sContent'];
 
         // 根据like值判断是执行点赞语句还是取消点赞语句
         if($like==1){
@@ -616,11 +624,11 @@ class UserController {
        $res = mysqli_query($this->link,$sql);
 
        if($flag === 'search'){
-           $this->searchNew();
+           $this->searchNew($sUsername,$sContnet);
        }else{
            $this -> news();
        }
-
+//       $this -> news();
    }
 
     // 添加评论
@@ -642,12 +650,50 @@ class UserController {
 
     // 好友列表
     public function friends() {
+        $userid = $_SESSION['userid'];
+        $friends = [];
+        // 查询当前用户的好友
+        $sql = "SELECT * FROM `user` WHERE id IN (SELECT fid FROM friend_connection WHERE uid = '$userid')";
+        $res = mysqli_query($this->link,$sql);
+        while($result = mysqli_fetch_assoc($res)){
+            array_push( $friends,$result);
+        }
+
         require 'View/friends.html';
     }
 
     // 更多好友
     public function moreFriends() {
+        // 查询当前用户的除了自己的未添加过的用户信息
+        $userid = $_SESSION['userid'];
+        $friends = [];
+        $sql = "SELECT * FROM `user` WHERE id NOT IN (SELECT fid FROM friend_connection WHERE uid = '$userid' ) AND id <> '$userid'";
+        $res = mysqli_query($this->link,$sql);
+        while($result = mysqli_fetch_assoc($res)){
+            array_push( $friends,$result);
+        }
+
         require 'View/moreFriends.html';
+    }
+
+    //添加好友
+    public function addFriend() {
+        $id = $_GET['id'];
+        $uid = $_SESSION['userid'];
+
+        $sql = "INSERT INTO friend_connection(uid,fid) VALUES('$uid','$id')";
+
+        $res = mysqli_query($this->link,$sql);
+    }
+
+    // 删除好友
+    public function removeFriend() {
+        $id = $_GET['id'];
+        $uid = $_SESSION['userid'];
+
+        $sql = "DELETE FROM friend_connection WHERE uid='$uid' AND fid='$id'";
+
+        $res = mysqli_query($this->link,$sql);
     }
 
 }

@@ -139,7 +139,7 @@
 </head>
 <body>
 <img id="bg" src="public/img/bg3.jpg" alt="">
-<div class="container">
+<div class="container" id="divContent" style=" overflow-y: scroll" onscroll= "KeepScrollBar()">
 
     <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="#">
@@ -258,7 +258,7 @@
                             }
                             echo"<div class='time col-md-12'>";
                                 echo $news[$i]['createtime'];
-                                echo"<a href='/phpProject/?a=addLike&id=".$news[$i]["id"]."&like=".$news[$i]["like"]."&flag=".$flag."'>";
+                                echo"<a href='/phpProject/?a=addLike&id=".$news[$i]["id"]."&like=".$news[$i]["like"]."&flag=".$flag."&sUsername=".$s_username."&sContent=".$s_content."'>";
                                     if($news[$i]['like']){
                                     echo '取消点赞';
                                     }else{
@@ -305,6 +305,26 @@
 <!--引入jQuery-->
 <script src="public/js/jquery-3.4.1.min.js"></script>
 <script src="public/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    function KeepScrollBar() {
+        var scrollPos;
+        if (typeof window.pageYOffset != 'undefined') {
+            scrollPos = window.pageYOffset;
+        }
+        else if (typeof document.body != 'undefined') {
+            scrollPos = document.getElementById('divContent').scrollTop;
+        }
+        document.cookie = "scrollTop=" + scrollPos;
+    }
+    window.onload = function (){
+        if (document.cookie.match(/scrollTop=([^;]+)(;|$)/) != null) {
+            var arr = document.cookie.match(/scrollTop=([^;]+)(;|$)/);
+            document.getElementById('divContent').scrollTop = parseInt(arr[1]);
+        }
+    }
+</script>
+
 <script>
     function showImage() {
         var docObj = document.getElementById("doc");
