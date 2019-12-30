@@ -41,6 +41,7 @@ class UserController {
 //    setcookie('username',$username,time()+600);
             $_SESSION['username'] = $r['username'];
             $_SESSION['userid']= $r['id'];
+            $_SESSION['avatar']= $r['avatar'];
 
 
 //            echo $_SESSION['username'];
@@ -610,9 +611,9 @@ class UserController {
        $id = $_GET['id'];
        $like = $_GET['like'];
        // 标志是哪个方法处理的。
-       $flag = $_GET['flag'];
-       $sUsername = $_GET['sUsername'];
-       $sContnet = $_GET['sContent'];
+//       $flag = $_GET['flag'];
+//       $sUsername = $_GET['sUsername'];
+//       $sContnet = $_GET['sContent'];
 
         // 根据like值判断是执行点赞语句还是取消点赞语句
         if($like==1){
@@ -623,11 +624,11 @@ class UserController {
 
        $res = mysqli_query($this->link,$sql);
 
-       if($flag === 'search'){
-           $this->searchNew($sUsername,$sContnet);
-       }else{
-           $this -> news();
-       }
+//       if($flag === 'search'){
+//           $this->searchNew($sUsername,$sContnet);
+//       }else{
+//           $this -> news();
+//       }
 //       $this -> news();
    }
 

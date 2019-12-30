@@ -258,17 +258,29 @@
                             }
                             echo"<div class='time col-md-12'>";
                                 echo $news[$i]['createtime'];
-                                echo"<a href='/phpProject/?a=addLike&id=".$news[$i]["id"]."&like=".$news[$i]["like"]."&flag=".$flag."&sUsername=".$s_username."&sContent=".$s_content."'>";
-                                    if($news[$i]['like']){
-                                    echo '取消点赞';
-                                    }else{
-                                    echo '点赞';
-                                    }
 
-                                echo"</a>";
-                                echo"<div>";
+
+                                echo"<button class='addlike'>";
+                                    echo"<div class='id' style='display: none;'>".$_SESSION['userid']."</div>";
+                                    echo"<div class='avatar' style='display: none;'>".$_SESSION['avatar']."</div>";
+                                    echo"<div class='newsid' style='display: none;'>".$news[$i]["id"]."</div>";
+                                    echo"<div class='like' >".$news[$i]["like"]."</div>";
+                                    echo"<div class='like_text'> ";
+                                        if($news[$i]['like']){
+                                        echo '取消点赞';
+                                        }else{
+                                        echo '点赞';
+                                        }
+                                    echo"</div>";
+                                echo"</button>";
+
+
+                                echo"<div class='avatars'>";
                                     forEach( $news[$i]['like_users'] as $user) {
-                                    echo"<img style='width:30px;height:30px;' src='".$user["avatar"]."' >";
+                                    echo"<div class='avatar_img'>";
+                                        echo"<div class='uid' style='display: none;'>".$user["uid"]."</div>";
+                                        echo"<img style='width:30px;height:30px;' src='".$user["avatar"]."' >";
+                                    echo"</div>";
                                     }
                                 echo"</div>";
 
@@ -324,7 +336,6 @@
         }
     }
 </script>
-
 <script>
     function showImage() {
         var docObj = document.getElementById("doc");
@@ -378,6 +389,48 @@
 </script>
 <script>
 
+    $(document).ready(function(){
+        $(".addlike").on("click",function(){
+            let uid = $(this).children(".id").text();
+            let avatar = $(this).children(".avatar").text();
+            let newsid =  $(this).children(".newsid").text();
+            let like = $(this).children(".like").text();
+
+            var that = $(this);
+            $.get("/phpProject/?a=addLike",{id:newsid,like:like},function(data){
+
+                if(like ==1){
+//                    $(".uid:contains(id)").parent("avatar_img").remove();
+                    console.log($(that.next()).find(".avatar_img>.uid:contains(uid)").text());
+                    var dom = $(that.next()).find(".avatar_img .uid");
+                    console.log(dom);
+                    $.each(dom, function(key, val) {
+                        console.log(val.innerHTML);
+                        if(val.innerHTML == uid){
+                            $(val).parent().remove();
+                        }
+                    });
+
+                    $(dom).parent("avatar_img").remove();
+
+//                    uidDom.parent("avatar_img").remove();
+                    that.children(".like").text("0");
+                    that.children(".like_text").text("点赞");
+                }
+                if(like == 0){
+                    var html = "";
+                    html += "<div class='avatar_img'><div class='uid'style='display: none;' >";
+                    html += uid;
+                    html += "</div><img style='width:30px;height:30px;' src='";
+                    html += avatar;
+                    html += "' ></div>";
+                    that.next().append(html)
+                    that.children(".like").text("1");
+                    that.children(".like_text").text("取消点赞");
+                }
+            });
+        });
+    });
 </script>
 </body>
 
