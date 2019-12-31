@@ -293,6 +293,14 @@ class UserController {
 
     }
 
+    // 修改座右铭
+    public function updataMotto() {
+        $motto = $_GET['motto'];
+        $id = $_SESSION['userid'];
+        $sql = "UPDATE user SET motto='$motto' WHERE id = '$id'"; // 修改指定id的用户的座右铭
+        $res = mysqli_query($this->link,$sql);
+    }
+
     // 动态
     public function news() {
         // 标志是哪个方法处理的。
