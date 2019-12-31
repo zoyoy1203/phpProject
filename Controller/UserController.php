@@ -1,5 +1,4 @@
 <?php
-//require 'config/db_connect.php';
 
 class UserController {
     function __construct(){
@@ -479,12 +478,6 @@ class UserController {
         $errinfo =  '';
         $errinfo1 = '';
         if(!empty($_POST)){
-//            var_dump($_FILES['img']['name']);
-//            echo "<br />";
-//            var_dump($_FILES['img']['tmp_name']);
-//
-//
-//            return;
 
             $errinfo =  '提交了表单';
 
@@ -646,7 +639,7 @@ class UserController {
             $res = mysqli_query($this->link,$sql);
         }
 
-        $this -> news();
+//        $this -> news();
     }
 
     // 好友列表

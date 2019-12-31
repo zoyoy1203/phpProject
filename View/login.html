@@ -36,7 +36,7 @@
             width: 100%;
         }
         p.error{
-            background: #fff;
+            background: rgba(255,255,255,0.8);
             color: red;
             font-weight: 600;
             font-size: 24px;
@@ -84,15 +84,18 @@
             </div>
             <div class="control-group">
                 <div class="controls row">
-                    <label class="control-label col-md-3 col-sm-3 col-12 " for="code">密码</label>
+                    <label class="control-label col-md-3 col-sm-3 col-6 " for="code">验证码</label>
                     <input type="text"
-                           class="col-md-4 col-sm-4 col-12"
+                           class="col-md-5 col-sm-5 col-6"
                            id="code"
                            name="code"
                            placeholder="请输入验证码"
                            autocomplete
                             >
-                    <img src="util/verCode.php" alt="看不清楚，换一张" onclick="javascript:newgdcode(this,this.src);"  class="col-md-5 col-sm-5 col-12" alt=""/>
+                    <div class="col-md-4 col-sm-4  col-12">
+                        <img src="util/verCode.php" alt="看不清楚，换一张" onclick="javascript:newgdcode(this,this.src);" style="width: 100px;height:50px;"  alt=""/>
+                    </div>
+
                 </div>
             </div>
             <div class="control-group">
@@ -106,10 +109,13 @@
         </form>
         <div class="col-md-3"></div>
 
+        <div class="col-md-3"></div>
+        <p class="text-center error col-md-6">
+            <?= $errinfo ?>
+        </p>
+        <div class="col-md-3"></div>
     </div>
-    <p class="text-center error">
-        <?= $errinfo ?>
-    </p>
+
 
 </div>
 

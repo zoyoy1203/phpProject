@@ -60,7 +60,8 @@
         .name{
             font-size: 20px;
             font-weight: 600;
-            color: #B3D7CB;
+            color: #fff;
+            background: #B3D7CB;
         }
         .user_info{
             margin-top:20px;
@@ -134,7 +135,29 @@
         input[type='submit']{
             margin-left: 10px;
         }
-
+        .avatar_img{
+            width: 40px;
+            float: left;
+        }
+        .addlike{
+            margin-left: 30px;
+        }
+        .comments_c{
+            background: #F1F3F4;
+            margin-top: 10px;
+            border-radius: 20px;
+            padding-left: 20px!important;
+        }
+        .comments_name{
+            display:inline-block;
+            font-size:18px;
+            font-weight:600;
+            min-width: 50px;
+            color: #8DB1A3;
+        }
+        .comments_text{
+            margin: 5px auto;
+        }
     </style>
 </head>
 <body>
@@ -173,7 +196,7 @@
             if(!empty( $_SESSION['username'])){
                 $username = $_SESSION['username'];
                  echo "<li>欢迎！</li> ";
-            echo "<li>$username</li> ";
+            echo "<li id='username'>$username</li> ";
             echo "<li><a href='/phpProject/?a=logout'> 退出</a></li>";
             }else{
             echo "<li><a href='/phpProject/?a=regis'> 注册</a></li>";
@@ -239,7 +262,7 @@
                     echo "<div class='col-md-2 col-2 text-right'>";
                         echo "<img src='".$news[$i]["avatar"]."' class='avatar'>";
                     echo "</div>";
-                echo "<div class='col-md-10 col-10'>";
+                echo "<div class='col-md-8 col-10'>";
                         echo"<div class='new'>";
                             echo"<div class='col-md-12 name'>";
                                  echo $news[$i]['nickname'];
@@ -248,15 +271,15 @@
                                  echo $news[$i]['content'];
                             echo"</div>";
                             if($news[$i]["img"][0]){
-                                echo"<img class='new_img col-md-12' src='".$news[$i]["img"][0]."'>";
+                                echo"<img class='new_img ' src='".$news[$i]["img"][0]."'>";
                             }
                             if($news[$i]["img"][1]){
-                                echo"<img class='new_img col-md-12' src='".$news[$i]["img"][1]."'>";
+                                echo"<img class='new_img ' src='".$news[$i]["img"][1]."'>";
                             }
                             if($news[$i]["img"][2]){
-                                echo"<img class='new_img col-md-12' src='".$news[$i]["img"][2]."'>";
+                                echo"<img class='new_img ' src='".$news[$i]["img"][2]."'>";
                             }
-                            echo"<div class='time col-md-12'>";
+                            echo"<div class='time col-md-12 row'>";
                                 echo $news[$i]['createtime'];
 
 
@@ -264,7 +287,7 @@
                                     echo"<div class='id' style='display: none;'>".$_SESSION['userid']."</div>";
                                     echo"<div class='avatar' style='display: none;'>".$_SESSION['avatar']."</div>";
                                     echo"<div class='newsid' style='display: none;'>".$news[$i]["id"]."</div>";
-                                    echo"<div class='like' >".$news[$i]["like"]."</div>";
+                                    echo"<div class='like' style='display: none;' >".$news[$i]["like"]."</div>";
                                     echo"<div class='like_text'> ";
                                         if($news[$i]['like']){
                                         echo '取消点赞';
@@ -275,7 +298,7 @@
                                 echo"</button>";
 
 
-                                echo"<div class='avatars'>";
+                                echo"<div class='avatars col-md-12'>";
                                     forEach( $news[$i]['like_users'] as $user) {
                                     echo"<div class='avatar_img'>";
                                         echo"<div class='uid' style='display: none;'>".$user["uid"]."</div>";
@@ -286,22 +309,25 @@
 
                             echo"</div>";
                             echo"<div class='col-md-12 comments'>";
-                                echo"<form action='/phpProject/?a=addcomments'  class='row' method='post'>";
-                                    echo"<input type='text' value='".$news[$i]["id"]."' style='visibility: hidden;width: 0;' name='newid'>";
-                                    echo"<input   type='text' placeholder='请输入评论。。'  name='content'>";
-                                    echo"<input  type='submit' value='发送'/>";
-                                echo"</form>";
+                                echo"<div  class='row'>";
+                                    echo"<input type='text' value='".$news[$i]["id"]."' style='visibility: hidden;width: 0;' name='newid' class='input_newid'>";
+                                    echo"<input style='width: 60%;'  type='text' placeholder='请输入评论。。'  name='content' class='input_content'>";
+                                    echo"<button class='comments_btn'>发送</button>";
+                                echo"</div>";
                             echo"</div>";
+                            echo"<div class='comments_c'>";
                             forEach( $news[$i]['comments'] as $comment) {
-                            echo"<div class='col-md-12'>";
-                                echo"<span style='display:inline-block;font-size:18px;font-weight:600;min-width: 50px;'>".$comment['nickname']."</span>";
+                            echo"<div class='comments_text col-md-12'>";
+                                echo"<span class='comments_name'>".$comment['nickname']." :</span>";
                                 echo"<span>".$comment['content']."</span>";
 
                             echo"</div>";
                             }
+                            echo"</div>";
                         echo"</div>";
 
                     echo"</div>";
+                echo"<div class='col-md-2 col-0'></div>";
                 echo "</div>";
 
                 }
@@ -428,6 +454,26 @@
                     that.children(".like").text("1");
                     that.children(".like_text").text("取消点赞");
                 }
+            });
+        });
+
+        $(".comments_btn").on("click",function(){
+            let input_newid = $(this).parent().children(".input_newid").val();
+            let input_content = $(this).parent().children(".input_content").val();
+
+            let username = $("#username").text();
+            var that = $(this);
+            $.post("/phpProject/?a=addcomments",{newid:input_newid, content:input_content},function(data){
+                var html = "";
+                html += "<div class='comments_text col-md-12'><span class='comments_name'>";
+                html += username;
+                html += ":</span><span>";
+                html += input_content;
+                html += "</span></div>";
+
+                var dom = that.parent().parent();
+                $(dom).next().append(html);
+                that.parent().children(".input_content").val("");
             });
         });
     });

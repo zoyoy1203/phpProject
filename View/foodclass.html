@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="public/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/font/iconfont.css">
     <style>
+        a{
+            color: #808080;
+        }
+        a:hover{
+            color:#000;
+        }
         html,body{
             width: 100%;
             height: 100%;
@@ -46,17 +52,21 @@
             float: left;
         }
         .navbar{
-            background: #DFE9E8;
+            background: #81CCC2;
         }
         .title{
             margin: 20px 0;
             border-bottom: 2px solid #52B2A7;
         }
         .title_s{
-            background: #DFE9E8;
-            font-size: 22px;
+            background:  #81CCC2;
+            font-size: 24px;
             height: 50px;
             line-height: 50px;
+            margin-bottom: 0;
+            margin-top: 20px;
+            color: #fff;
+            font-weight: 600;
         }
         .title_ss{
             font-size: 18px;
@@ -135,7 +145,7 @@
         <?php
            foreach ($foods as $food) {
                 echo "<div class='col-md-12 food'>";
-                echo "<p class='title_s'>".$food["name"]."</p>";
+                echo "<p class='title_s text-center'>".$food["name"]."</p>";
                 echo "<div class='food row'>";
                 foreach ($food["cs"] as $f) {
                 echo " <div class='col-md-12 conetnt_s'>";
