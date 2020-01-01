@@ -254,14 +254,14 @@
 
                     </form>
                 </div>
-                <p class="text-center error">
+                <p class="text-center error" style="background:  #DCEDE7; margin-top:10px;">
                     <?= $errinfo1 ?>
                 </p>
             </div>
 
             <?php
             if($news==null){
-                echo "<div class='col-md-12 text-center' style='font-size:24px;font-weight:600;color:#F19482;'>暂无动态！</div>";
+                echo "<div class='col-md-12 text-center' style='font-size:24px;font-weight:600;color:#8DB1A3;'>暂无动态！</div>";
                 }else{
                 for( $i= 0;$i< count($news);$i++){
                 echo "<div class='row news'>";
@@ -420,7 +420,6 @@
     }
 </script>
 <script>
-
     $(document).ready(function(){
         $(".addlike").on("click",function(){
             let uid = $(this).children(".id").text();

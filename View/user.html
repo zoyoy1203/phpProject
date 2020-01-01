@@ -135,7 +135,13 @@
         .time{
             color:  #8DB1A3;
         }
-
+        .form_avatar{
+            margin-top:10px;
+        }
+        .error{
+            margin: 10px 0 0 0;
+            background:  #DCEDE7;
+        }
     </style>
 </head>
 <body>
@@ -193,7 +199,7 @@
             <div id="localImag">
                 <img id="preview" width=-1 height=-1 style="display:none" />
             </div>
-            <form action="/phpProject/?a=updateAvatar" method="post" enctype="multipart/form-data">
+            <form action="/phpProject/?a=updateAvatar" method="post" class="form_avatar" enctype="multipart/form-data">
                 <input type='button' value="上传头像"  OnClick='javascript:$("#doc").click();'/>
                 <input type="hidden" name="MAX_FILE_SIZE" value="6291456"/>
                 <input type="file" name="avatar"  id="doc" onchange="showImage();" style="display: none;" />
@@ -216,33 +222,45 @@
                 <div class="col-md-1"></div>
                 <button class="updataMotto" style="margin-top:10px">修改座右铭</button>
             </div>
+            <p class="text-center error">
+
+            </p>
 
         </div>
         <div class="news  col-md-8 col-sm-12 col-12">
             <h3 class="col-md-12">我的动态</h3>
+
             <?php
+
+             if($news==null){
+                    echo "<div class='col-md-12 text-center' style='font-size:24px;font-weight:600;color:#8DB1A3;'>暂无动态！</div>";
+                }else{
                     for($i= 0;$i< count($news);$i++){
                     echo"<div class='new'>";
-                            echo"<div class='col-md-12 text'>";
-                                echo $news[$i]['content'];
-                            echo"</div>";
-                            if($news[$i]["img"][0]){
-                            echo"<img class='new_img ' src='".$news[$i]["img"][0]."'>";
-                            }
-                            if($news[$i]["img"][1]){
-                            echo"<img class='new_img ' src='".$news[$i]["img"][1]."'>";
-                            }
-                            if($news[$i]["img"][2]){
-                            echo"<img class='new_img ' src='".$news[$i]["img"][2]."'>";
-                            }
-                            echo"<p class='time col-md-12'>";
-                                echo $news[$i]['createtime'];
-                            echo"</p>";
+                    echo"<div class='col-md-12 text'>";
+                        echo $news[$i]['content'];
                         echo"</div>";
+                    if($news[$i]["img"][0]){
+                    echo"<img class='new_img ' src='".$news[$i]["img"][0]."'>";
+                    }
+                    if($news[$i]["img"][1]){
+                    echo"<img class='new_img ' src='".$news[$i]["img"][1]."'>";
+                    }
+                    if($news[$i]["img"][2]){
+                    echo"<img class='new_img ' src='".$news[$i]["img"][2]."'>";
+                    }
+                    echo"<p class='time col-md-12'>";
+                        echo $news[$i]['createtime'];
+                        echo"</p>";
+                    echo"</div>";
 
                     }
+                }
+
 
             ?>
+
+
         </div>
 
     </div>
@@ -263,6 +281,7 @@
             var that = $(this);
             $.get("/phpProject/?a=updataMotto",{motto:motto},function(data){
                 $(dom).find(".motto").val(motto);
+                $(dom).next(".error").text(data);
             });
         });
     });

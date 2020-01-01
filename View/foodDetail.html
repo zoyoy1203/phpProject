@@ -132,36 +132,38 @@
     </nav>
 
     <div class="food row">
-        <div class="img col-md-6 text-center">
-            <img src="<?=$food['photo_path'] ?>" />";
-        </div>
-        <div class="text col-md-6">
-            <h3><?= $food['title'] ?></h3>
-            <div class="tips">
-                <h4>制作提示：</h4>
-                <?= $food['tips'] ?>
-            </div>
-            <?php
-                if($food['cookstory']){
+
+        <?php
+            if($food){
+              echo"<div class='img col-md-6 text-center'>";
+                    echo"<img src='".$food["photo_path"]."'/>";
+                echo"</div>";
+                echo"<div class='text col-md-6'>";
+                    echo"<h3>".$food['title']."</h3>";
+                    echo"<div class='tips'>";
+                        echo"<h4>制作提示：</h4>";
+                        echo $food['tips'];
+                    echo"</div>";
+                    if($food['cookstory']){
                     echo "<div class='cookstory'>";
-                        echo "<h4>美食小故事：</h4>";
-                        echo $food['cookstory'];
+                    echo "<h4>美食小故事：</h4>";
+                    echo $food['cookstory'];
                     echo "</div>";
-                }
-             ?>
-        </div>
-
-        <div class="col-md-11 majors">
-            <h3 class="title">制作材料</h3>
-
-            <?php
-               foreach ($food['major'] as $major) {
+                    }
+                echo"</div>";
+                echo"<div class='col-md-11 majors'>";
+                    echo"<h3 class='title'>制作材料</h3>";
+                    foreach ($food['major'] as $major) {
                     echo "<div class='major text-center'><p>".$major['title']."</p><p>".$major['note']."</p></div>";
-                }
-            ?>
+                    }
+                echo"</div>";
 
+            }else{
+                echo "<div class='col-md-12 text-center' style='font-size:24px;font-weight:600;color:#8DB1A3;'>暂无菜谱信息！</div>";
+            }
 
-        </div>
+        ?>
+
     </div>
 
 </div>
