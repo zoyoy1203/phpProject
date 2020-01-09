@@ -2,67 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44dee6ee-727b-4a12-be56-fa291d40cfba" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\public\img\bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\public\img\bg3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\public\img\regis.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\avatars\1577173177_84117.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\avatars\1577430302_62953.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\avatars\1577430339_18787.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\avatars\1577610748_66476.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\avatars\1577610815_87268.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\avatars\1577610840_28004.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\avatars\1577624957_96849.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577262827_16709food2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577262827_50323food3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577262827_87207food1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577430631_11541food5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577430631_23113food7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577430631_33262food6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577430728_11877food5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577430728_39330food6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577430728_65527food7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431027_20618food7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431027_26492food5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431027_38770food6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431053_30652food2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431053_32860food3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431053_67989food1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431198_22130food1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431198_26711food2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431198_65029food3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431215_17556mongodb4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431215_32838mongodb6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431215_64280mongodb5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431249_11219mongo3.PNG" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431249_33629mongo1.PNG" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431249_40095mongo2.PNG" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431344_18902css3.PNG" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431344_63764css11.PNG" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577431344_99888css7.PNG" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577609570_52310food1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577609570_88455food2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577609570_95137food3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577609729_22256food5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577609729_34779food4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577609805_23560food4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577609805_63459food5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577609840_31900food5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577609840_52964food4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577624975_48924food7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577624975_51552food6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577705782_38390food4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577810125_12608food6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577810125_51304food4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577810125_56733food5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577810162_45575food4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577810162_48081food5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\phpProject\upload\newsImgs\1577810162_60777food6.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/UserController.php" afterPath="$PROJECT_DIR$/Controller/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/foodDetail.html" afterPath="$PROJECT_DIR$/View/foodDetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/friends.html" afterPath="$PROJECT_DIR$/View/friends.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/news.html" afterPath="$PROJECT_DIR$/View/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/regis.html" afterPath="$PROJECT_DIR$/View/regis.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/user.html" afterPath="$PROJECT_DIR$/View/user.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phpProject.iws" />
@@ -91,14 +31,14 @@
       <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.928572" vertical-offset="1205" max-vertical-offset="4332">
-              <caret line="263" column="124" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="124" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="95" max-vertical-offset="3819">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -127,10 +67,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foodDetail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.26988637" vertical-offset="1083" max-vertical-offset="4161">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="foodDetail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/foodDetail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46778712" vertical-offset="882" max-vertical-offset="1957">
+            <state vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1957">
               <caret line="139" column="29" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -143,7 +93,7 @@
       <file leaf-file-name="moreFriends.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/moreFriends.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2736">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2736">
               <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
               <folding>
                 <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -155,7 +105,7 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.857143" vertical-offset="385" max-vertical-offset="2527">
+            <state vertical-scroll-proportion="0.0" vertical-offset="385" max-vertical-offset="2527">
               <caret line="51" column="13" selection-start-line="46" selection-start-column="3" selection-end-line="51" selection-end-column="13" />
               <folding />
             </state>
@@ -165,7 +115,7 @@
       <file leaf-file-name="regis.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/regis.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="43.0" vertical-offset="2116" max-vertical-offset="3002">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2116" max-vertical-offset="3002">
               <caret line="48" column="62" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -177,7 +127,7 @@
       <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.392857" vertical-offset="2491" max-vertical-offset="4864">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2491" max-vertical-offset="4864">
               <caret line="142" column="33" selection-start-line="142" selection-start-column="10" selection-end-line="142" selection-end-column="33" />
               <folding>
                 <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -195,7 +145,7 @@
       <file leaf-file-name="friends.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/friends.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5" vertical-offset="2413" max-vertical-offset="3496">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2413" max-vertical-offset="3496">
               <caret line="141" column="115" selection-start-line="141" selection-start-column="115" selection-end-line="141" selection-end-column="115" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -207,7 +157,7 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.189655" vertical-offset="1083" max-vertical-offset="6099">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1083" max-vertical-offset="6099">
               <caret line="190" column="10" selection-start-line="190" selection-start-column="10" selection-end-line="190" selection-end-column="10" />
               <folding>
                 <element signature="n#login#0;n#UserController#0;n#!!top" expanded="false" />
@@ -233,7 +183,6 @@
                 <marker date="1577869949502" expanded="true" signature="7020:7065" placeholder="SELECT * FRO..user..." />
                 <marker date="1577869949502" expanded="true" signature="7209:7284" placeholder="SELECT * fro..." />
                 <marker date="1577869949502" expanded="true" signature="9075:9138" placeholder="UPDATE user ..." />
-                <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
                 <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
                 <marker date="1577869949502" expanded="true" signature="10536:10668" placeholder="SELECT news...." />
                 <marker date="1577869949502" expanded="true" signature="10898:11042" placeholder="SELECT like_..." />
@@ -266,7 +215,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.4285715" vertical-offset="217" max-vertical-offset="931">
+            <state vertical-scroll-proportion="0.0" vertical-offset="217" max-vertical-offset="931">
               <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -299,6 +248,7 @@
         <option value="$PROJECT_DIR$/View/user.html" />
         <option value="$PROJECT_DIR$/View/news.html" />
         <option value="$PROJECT_DIR$/View/foodDetail.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -350,6 +300,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="phpProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phpProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phpProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -414,7 +378,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1490" height="880" extended-state="7" />
+    <frame x="-8" y="-8" width="1490" height="880" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -516,7 +480,6 @@
             <marker date="1577869949502" expanded="true" signature="7209:7284" placeholder="SELECT * fro..." />
             <marker date="1577869949502" expanded="true" signature="9075:9138" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
-            <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10536:10668" placeholder="SELECT news...." />
             <marker date="1577869949502" expanded="true" signature="10898:11042" placeholder="SELECT like_..." />
             <marker date="1577869949502" expanded="true" signature="11531:11650" placeholder="SELECT `comm..." />
@@ -572,7 +535,6 @@
             <marker date="1577869949502" expanded="true" signature="7020:7065" placeholder="SELECT * FRO..user..." />
             <marker date="1577869949502" expanded="true" signature="7209:7284" placeholder="SELECT * fro..." />
             <marker date="1577869949502" expanded="true" signature="9075:9138" placeholder="UPDATE user ..." />
-            <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10536:10668" placeholder="SELECT news...." />
             <marker date="1577869949502" expanded="true" signature="10898:11042" placeholder="SELECT like_..." />
@@ -651,7 +613,6 @@
             <marker date="1577869949502" expanded="true" signature="7209:7284" placeholder="SELECT * fro..." />
             <marker date="1577869949502" expanded="true" signature="9075:9138" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
-            <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10536:10668" placeholder="SELECT news...." />
             <marker date="1577869949502" expanded="true" signature="10898:11042" placeholder="SELECT like_..." />
             <marker date="1577869949502" expanded="true" signature="11531:11650" placeholder="SELECT `comm..." />
@@ -686,9 +647,9 @@
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -766,7 +727,6 @@
             <marker date="1577869949502" expanded="true" signature="7209:7284" placeholder="SELECT * fro..." />
             <marker date="1577869949502" expanded="true" signature="9075:9138" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
-            <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10536:10668" placeholder="SELECT news...." />
             <marker date="1577869949502" expanded="true" signature="10898:11042" placeholder="SELECT like_..." />
             <marker date="1577869949502" expanded="true" signature="11531:11650" placeholder="SELECT `comm..." />
@@ -808,9 +768,9 @@
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -874,7 +834,6 @@
             <marker date="1577869949502" expanded="true" signature="7209:7284" placeholder="SELECT * fro..." />
             <marker date="1577869949502" expanded="true" signature="9075:9138" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
-            <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10536:10668" placeholder="SELECT news...." />
             <marker date="1577869949502" expanded="true" signature="10898:11042" placeholder="SELECT like_..." />
             <marker date="1577869949502" expanded="true" signature="11531:11650" placeholder="SELECT `comm..." />
@@ -916,9 +875,9 @@
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -982,7 +941,6 @@
             <marker date="1577869949502" expanded="true" signature="7209:7284" placeholder="SELECT * fro..." />
             <marker date="1577869949502" expanded="true" signature="9075:9138" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
-            <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10536:10668" placeholder="SELECT news...." />
             <marker date="1577869949502" expanded="true" signature="10898:11042" placeholder="SELECT like_..." />
             <marker date="1577869949502" expanded="true" signature="11531:11650" placeholder="SELECT `comm..." />
@@ -1038,9 +996,9 @@
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1132,7 +1090,6 @@
             <marker date="1577869949502" expanded="true" signature="7209:7284" placeholder="SELECT * fro..." />
             <marker date="1577869949502" expanded="true" signature="9075:9138" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
-            <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10536:10668" placeholder="SELECT news...." />
             <marker date="1577869949502" expanded="true" signature="10898:11042" placeholder="SELECT like_..." />
             <marker date="1577869949502" expanded="true" signature="11531:11650" placeholder="SELECT `comm..." />
@@ -1164,7 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="931">
           <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1218,7 +1174,6 @@
             <marker date="1577869949502" expanded="true" signature="7209:7284" placeholder="SELECT * fro..." />
             <marker date="1577869949502" expanded="true" signature="9075:9138" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
-            <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10536:10668" placeholder="SELECT news...." />
             <marker date="1577869949502" expanded="true" signature="10898:11042" placeholder="SELECT like_..." />
             <marker date="1577869949502" expanded="true" signature="11531:11650" placeholder="SELECT `comm..." />
@@ -1262,7 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.0" vertical-offset="274" max-vertical-offset="988">
           <caret line="38" column="22" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1282,7 +1236,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/View/regis.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="43.0" vertical-offset="2116" max-vertical-offset="3002">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2116" max-vertical-offset="3002">
           <caret line="48" column="62" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1292,7 +1246,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/View/friends.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5" vertical-offset="2413" max-vertical-offset="3496">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2413" max-vertical-offset="3496">
           <caret line="141" column="115" selection-start-line="141" selection-start-column="115" selection-end-line="141" selection-end-column="115" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1312,7 +1266,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/View/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.857143" vertical-offset="385" max-vertical-offset="2527">
+        <state vertical-scroll-proportion="0.0" vertical-offset="385" max-vertical-offset="2527">
           <caret line="51" column="13" selection-start-line="46" selection-start-column="3" selection-end-line="51" selection-end-column="13" />
           <folding />
         </state>
@@ -1320,7 +1274,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/View/user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.392857" vertical-offset="2491" max-vertical-offset="4864">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2491" max-vertical-offset="4864">
           <caret line="142" column="33" selection-start-line="142" selection-start-column="10" selection-end-line="142" selection-end-column="33" />
           <folding>
             <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1336,7 +1290,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/View/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4285715" vertical-offset="217" max-vertical-offset="931">
+        <state vertical-scroll-proportion="0.0" vertical-offset="217" max-vertical-offset="931">
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -1348,7 +1302,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.189655" vertical-offset="1083" max-vertical-offset="6099">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1083" max-vertical-offset="6099">
           <caret line="190" column="10" selection-start-line="190" selection-start-column="10" selection-end-line="190" selection-end-column="10" />
           <folding>
             <element signature="n#login#0;n#UserController#0;n#!!top" expanded="false" />
@@ -1374,7 +1328,6 @@
             <marker date="1577869949502" expanded="true" signature="7020:7065" placeholder="SELECT * FRO..user..." />
             <marker date="1577869949502" expanded="true" signature="7209:7284" placeholder="SELECT * fro..." />
             <marker date="1577869949502" expanded="true" signature="9075:9138" placeholder="UPDATE user ..." />
-            <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10058:10105" placeholder="UPDATE user ..." />
             <marker date="1577869949502" expanded="true" signature="10536:10668" placeholder="SELECT news...." />
             <marker date="1577869949502" expanded="true" signature="10898:11042" placeholder="SELECT like_..." />
@@ -1403,16 +1356,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/View/foodDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1957">
+          <caret line="139" column="29" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/View/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.928572" vertical-offset="1205" max-vertical-offset="4332">
-          <caret line="263" column="124" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="124" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="95" max-vertical-offset="3819">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#button#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1442,20 +1406,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="742">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.26988637" vertical-offset="1083" max-vertical-offset="4161">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/foodDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46778712" vertical-offset="882" max-vertical-offset="1957">
-          <caret line="139" column="29" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
